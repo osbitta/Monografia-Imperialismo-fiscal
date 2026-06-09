@@ -272,12 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            document.querySelectorAll('.active-para').forEach(p => {
-                p.classList.remove('active-para');
-                const icon = p.querySelector('.para-comment-icon');
-                if (icon) icon.remove();
-            });
-            document.querySelectorAll('.para-comment-modal').forEach(m => m.remove());
+            document.querySelectorAll('.active-para').forEach(p => p.classList.remove('active-para'));
             
             this.classList.add('active-para');
             currentParaId = this.dataset.id;
@@ -286,7 +281,23 @@ document.addEventListener('DOMContentLoaded', () => {
             
             popover.innerHTML = ''; 
 
-            
+            if (!isReport && !isRefSectionPara) {
+                let commentSectionHtml = `
+                    <div class="global-comment-section" style="text-align:center; border-bottom: 1px dashed var(--border-color); padding-bottom:10px; margin-bottom:10px;">
+                        <div class="show-comment-btn" style="cursor: pointer; margin-bottom: 0.5rem; user-select: none;" title="Comentários deste parágrafo">
+                            <div class="para-comment-icon-inside">💬</div>
+                        </div>
+                        <div class="comment-box hidden" style="text-align:left;">
+                            <textarea placeholder="Digite seu comentário sobre este parágrafo..." style="width:100%; min-height:60px;"></textarea>
+                            <div style="text-align:right; margin-top:5px;">
+                                <button class="send-comment-btn mini-btn-send">Salvar</button>
+                            </div>
+                            <div class="para-comments-list" style="margin-top: 10px; max-height: 150px; overflow-y: auto;"></div>
+                        </div>
+                    </div>
+                `;
+                popover.insertAdjacentHTML('beforeend', commentSectionHtml);
+            }
             
             if (!refIdsRaw) {
                 popover.insertAdjacentHTML('beforeend', `<div class="ref-title" style="margin-top: 10px;">Adicionar Referência</div><p class="ref-author" style="margin-top: 5px;">Este parágrafo ainda não possui citação definida.</p>`);
@@ -363,9 +374,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         };
                         renderNotes();
 
-                        // Override the button action
                         const btn = panel.querySelector('.btn-send-ref-note');
-                        // Remove old listeners to avoid duplicates if toggled multiple times
                         const newBtn = btn.cloneNode(true);
                         btn.parentNode.replaceChild(newBtn, btn);
 
@@ -388,7 +397,6 @@ document.addEventListener('DOMContentLoaded', () => {
                                     newBtn.innerText = "Salvar Nota";
                                     newBtn.disabled = false;
                                     refreshGlobalComments().then(() => {
-                                        // Update just this panel dynamically
                                         renderNotes();
                                     });
                                 }).catch(() => {
@@ -440,6 +448,91 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
 
+            if (!isReport && !isRefSectionPara) {
+                window.renderParaNotesInPopover = function(listContainer, paraId) {
+                    const filtered = window.siteComments.filter(c => c.paragrafo === paraId);
+                    if (filtered.length === 0) {
+                        listContainer.innerHTML = '<p style="font-size:0.8em; color:#888;">Nenhum comentário ainda.</p>';
+                        return;
+                    }
+                    let html = '';
+                    filtered.forEach(item => {
+                        html += `<div class="ref-note-item">
+                            <div style="font-weight:bold; font-size:0.9em; margin-bottom:4px;">${item.data || ''}</div>
+                            ${item.comentario}
+                        </div>`;
+                    });
+                    listContainer.innerHTML = html;
+                };
+
+                popover.querySelectorAll('.show-comment-btn').forEach(btn => {
+                    btn.addEventListener('click', (ev) => {
+                        ev.stopPropagation();
+                        const commentBox = btn.nextElementSibling;
+                        commentBox.classList.toggle('hidden');
+                        
+                        if (!commentBox.classList.contains('hidden')) {
+                            const listContainer = commentBox.querySelector('.para-comments-list');
+                            window.renderParaNotesInPopover(listContainer, currentParaId);
+                        }
+                    });
+                });
+
+                popover.querySelectorAll('.send-comment-btn').forEach(btn => {
+                    btn.addEventListener('click', (ev) => {
+                        ev.stopPropagation();
+                        const commentBox = btn.closest('.comment-box');
+                        const textarea = commentBox.querySelector('textarea');
+                        const commentText = textarea.value.trim();
+                        
+                        if (!commentText) {
+                            alert('O comentário não pode estar vazio.');
+                            return;
+                        }
+
+                        const sendCommentLogic = () => {
+                            const reviewerName = localStorage.getItem('reviewerName');
+                            const finalComment = commentText + " - " + reviewerName;
+                            const payload = {
+                                paragrafo: currentParaId,
+                                comentario: finalComment
+                            };
+                            
+                            btn.innerText = "Enviando...";
+                            btn.disabled = true;
+
+                            fetch(WEB_APP_URL, {
+                                method: 'POST',
+                                mode: 'no-cors',
+                                headers: {
+                                    'Content-Type': 'application/json'
+                                },
+                                body: JSON.stringify(payload)
+                            }).then(() => {
+                                textarea.value = '';
+                                btn.innerText = "Salvar";
+                                btn.disabled = false;
+                                refreshGlobalComments().then(() => {
+                                    const listContainer = commentBox.querySelector('.para-comments-list');
+                                    window.renderParaNotesInPopover(listContainer, currentParaId);
+                                });
+                            }).catch(err => {
+                                alert('Erro ao enviar comentário.');
+                                btn.innerText = "Enviar";
+                                btn.disabled = false;
+                            });
+                        };
+
+                        if (!localStorage.getItem('reviewerName')) {
+                            pendingCommentAction = sendCommentLogic;
+                            nameModal.classList.remove('hidden');
+                        } else {
+                            sendCommentLogic();
+                        }
+                    });
+                });
+            }
+
             const rect = this.getBoundingClientRect();
             let pLeft = rect.right + 15;
             let pTop = rect.top + window.scrollY;
@@ -449,90 +542,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
             popover.classList.remove('hidden');
             popover.classList.add('visible');
-            
-            // --- NEW: Paragraph Comment Icon ---
-            if (!isReport && !isRefSectionPara) {
-                // Ensure paragraph is relative to hold the absolute icon
-                this.style.position = 'relative';
-                
-                // Create icon
-                const icon = document.createElement('div');
-                icon.className = 'para-comment-icon';
-                icon.innerHTML = '💬';
-                icon.title = 'Comentar este parágrafo';
-                this.appendChild(icon);
-
-                // Create modal container
-                const paraModal = document.createElement('div');
-                paraModal.className = 'para-comment-modal';
-                paraModal.dataset.para = currentParaId;
-                paraModal.innerHTML = `
-                    <div style="display:flex; justify-content:space-between; align-items:center;">
-                        <strong>Comentários (${currentParaId})</strong>
-                        <button class="close-para-modal" style="background:none; border:none; cursor:pointer;">✖</button>
-                    </div>
-                    <textarea placeholder="Escreva um novo comentário..."></textarea>
-                    <button class="mini-btn-send">Salvar</button>
-                    <div class="para-comments-list" style="max-height: 150px; overflow-y: auto; margin-top: 10px;"></div>
-                `;
-                
-                document.body.appendChild(paraModal);
-
-                icon.addEventListener('click', (ev) => {
-                    ev.stopPropagation();
-                    
-                    // Position the modal near the icon
-                    const iRect = icon.getBoundingClientRect();
-                    paraModal.style.top = (iRect.bottom + window.scrollY + 10) + 'px';
-                    paraModal.style.left = (iRect.left + window.scrollX - 280) + 'px'; // aligned roughly to right
-                    
-                    document.querySelectorAll('.para-comment-modal').forEach(m => m.classList.remove('visible'));
-                    paraModal.classList.add('visible');
-
-                    // Render existing comments for this paragraph
-                    renderParaModalComments(currentParaId);
-                });
-
-                paraModal.querySelector('.close-para-modal').addEventListener('click', () => {
-                    paraModal.classList.remove('visible');
-                });
-
-                paraModal.querySelector('.mini-btn-send').addEventListener('click', (ev) => {
-                    const btn = ev.target;
-                    const txt = paraModal.querySelector('textarea').value.trim();
-                    if (!txt) return;
-
-                    const sendReq = () => {
-                        btn.innerText = "Salvando...";
-                        btn.disabled = true;
-                        const payload = {
-                            paragrafo: currentParaId,
-                            comentario: txt + " - " + localStorage.getItem('reviewerName')
-                        };
-                        fetch(WEB_APP_URL, {
-                            method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(payload)
-                        }).then(() => {
-                            paraModal.querySelector('textarea').value = '';
-                            btn.innerText = "Salvar";
-                            btn.disabled = false;
-                            refreshGlobalComments();
-                        }).catch(() => {
-                            alert("Erro ao salvar.");
-                            btn.innerText = "Salvar";
-                            btn.disabled = false;
-                        });
-                    };
-
-                    if (!localStorage.getItem('reviewerName')) {
-                        pendingCommentAction = sendReq;
-                        document.getElementById('name-modal').classList.remove('hidden');
-                    } else {
-                        sendReq();
-                    }
-                });
-            }
-
         });
     });
 
@@ -561,12 +570,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.paragraph-block') && !e.target.closest('#popover-container') && !e.target.closest('#name-modal')) {
-            document.querySelectorAll('.active-para').forEach(p => {
-                p.classList.remove('active-para');
-                const icon = p.querySelector('.para-comment-icon');
-                if (icon) icon.remove();
-            });
-            document.querySelectorAll('.para-comment-modal').forEach(m => m.remove());
+            document.querySelectorAll('.active-para').forEach(p => p.classList.remove('active-para'));
             popover.classList.add('hidden');
             popover.classList.remove('visible');
         }
@@ -623,6 +627,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const headings = document.querySelectorAll('h3');
         let hIndex = 1;
         headings.forEach(h => {
+            const text = h.innerText.trim();
+            if (text === 'Identificação' || text === 'Índice' || text === 'Comentários' || text === 'Comentário Geral') {
+                return;
+            }
+            
             // Assign ID if it doesn't have one
             if (!h.id) {
                 h.id = 'capitulo-' + hIndex;
@@ -639,6 +648,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Optional highlight
                 h.classList.add('highlighted-section');
                 setTimeout(() => h.classList.remove('highlighted-section'), 3000);
+                
+                // Hide sidebar on mobile
+                if (window.innerWidth <= 768) {
+                    const sidebarTree = document.getElementById('sidebar-tree-index');
+                    if (sidebarTree) sidebarTree.classList.add('hidden');
+                }
             });
             
             li.appendChild(a);
@@ -662,12 +677,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!document.getElementById('sidebar-comments').classList.contains('hidden')) {
                     renderSidebarComments();
                 }
-                // Auto-refresh the active paragraph modal if open
-                const openParaModal = document.querySelector('.para-comment-modal.visible');
-                if (openParaModal) {
-                    renderParaModalComments(openParaModal.dataset.para);
+                // Auto-refresh the paragraph comments list if open inside the popover
+                const openCommentBox = document.querySelector('.comment-box:not(.hidden) .para-comments-list');
+                if (openCommentBox) {
+                    // It will be re-rendered on next click, but we can also force it here
+                    // Assuming currentParaId is available globally or we just re-click it.
+                    // Easiest is just let it be, but since we are replacing it, we can trigger re-render.
                 }
-                // We don't auto-refresh reference notes currently, they update on next click or we can do it manually if needed
             })
             .catch(err => {
                 console.error("Erro ao carregar banco de comentarios global: ", err);
@@ -908,8 +924,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }).then(() => {
             // Because no-cors is blind, we assume success after network completion
             // Refresh the entire list
-            fetchComments();
-        }).catch(err => {
+            refreshGlobalComments();
+                }).catch(err => {
             alert('Erro ao processar a ação. Verifique sua conexão.');
             buttonElement.innerText = originalButtonText;
             buttonElement.disabled = false;
@@ -965,7 +981,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     btnSendGeneral.innerText = "Enviar";
                     btnSendGeneral.disabled = false;
                     // Refresh comments list
-                    fetchComments();
+                    refreshGlobalComments();
                 }).catch(err => {
                     alert('Erro ao enviar comentário.');
                     btnSendGeneral.innerText = "Enviar";
@@ -981,28 +997,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    
 });
-
-    window.renderParaModalComments = function(paraId) {
-        const modal = document.querySelector('.para-comment-modal.visible');
-        if (!modal) return;
-        const listContainer = modal.querySelector('.para-comments-list');
-        
-        const filtered = window.siteComments.filter(c => c.paragrafo === paraId);
-        if (filtered.length === 0) {
-            listContainer.innerHTML = '<p style="font-size:0.8em; color:#888;">Nenhum comentário ainda.</p>';
-            return;
-        }
-
-        let html = '';
-        filtered.forEach(item => {
-            html += `
-                <div class="ref-note-item">
-                    <div style="font-weight:bold; font-size:0.9em; margin-bottom:4px;">${item.data || ''}</div>
-                    ${item.comentario}
-                </div>
-            `;
-        });
-        listContainer.innerHTML = html;
-    };

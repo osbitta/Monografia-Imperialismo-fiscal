@@ -1156,3 +1156,40 @@ body.dark-theme .para-comment-modal {
     font-size: 0.85em;
     align-self: flex-end;
 }
+
+/* Icone minimalista de comentario DENTRO do popover principal */
+.para-comment-icon-inside {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff;
+    color: #555;
+    border-radius: 50%;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+body.dark-theme .para-comment-icon-inside {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+.para-comment-icon-inside:hover {
+    transform: scale(1.1);
+    background-color: #f8fafc;
+}
+.para-comments-panel textarea {
+    width: 100%;
+    min-height: 60px;
+    padding: 8px;
+    border: 1px solid var(--border-color, #ccc);
+    border-radius: 4px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: inherit;
+    resize: vertical;
+    font-size: 0.9em;
+}
