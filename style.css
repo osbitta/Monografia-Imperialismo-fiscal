@@ -423,7 +423,7 @@ body {
 }
 
 
-/* Espa�amento reduzido entre cabe�alhos e par�grafos */
+/* Espa amento reduzido entre cabe alhos e par grafos */
 .document-body h3 {
     margin-bottom: 0.2rem;
     margin-top: 1.5rem;
@@ -434,7 +434,7 @@ body {
 }
 
 
-/* Zerando espa�amento entre par�grafos */
+/* Zerando espa amento entre par grafos */
 .paragraph-block {
     margin: 2px 0;
 }
@@ -444,7 +444,7 @@ body {
     margin-right: 0.5rem;
     user-select: none;
 }
-/* Estilos para as a��es do popover */
+/* Estilos para as a  es do popover */
 .popover-actions {
     display: flex;
     flex-direction: column;
@@ -548,7 +548,7 @@ body {
 }
 
 
-/* Ajuste de setas e posi��o para popover � direita */
+/* Ajuste de setas e posi  o para popover   direita */
 .reference-popover {
   transform: translateX(10px) translateY(0);
 }
@@ -588,7 +588,7 @@ body {
     display: block;
 }
 
-/* O container global de coment�rio dentro do popover */
+/* O container global de coment rio dentro do popover */
 .global-comment-section {
     margin-bottom: 1rem;
     border-bottom: 1px solid var(--border);
