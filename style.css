@@ -1020,3 +1020,139 @@ body.dark-theme .comment-card-details {
     border-radius: 4px;
     cursor: pointer;
 }
+
+
+/* =========================================
+   UI Minimalista: Botoes e Icones Novos
+   ========================================= */
+
+/* Ocultar botao de envio geral por padrao */
+#btn-send-general {
+    display: none;
+    margin-top: 8px;
+    width: 100%;
+}
+#btn-send-general.visible {
+    display: block;
+}
+
+/* Icone minimalista de notas na referencia */
+.ref-notes-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff;
+    color: #555;
+    border-radius: 50%;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+body.dark-theme .ref-notes-icon {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+.ref-notes-icon:hover {
+    transform: scale(1.1);
+    background-color: #f8fafc;
+}
+
+/* Painel de notas da referencia (expansivel) */
+.ref-notes-panel {
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed var(--border-color, #e2e8f0);
+}
+.ref-notes-panel.expanded {
+    display: block;
+}
+
+.ref-note-item {
+    font-size: 0.85em;
+    background: rgba(0,0,0,0.02);
+    padding: 6px 8px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    color: var(--text-color);
+}
+body.dark-theme .ref-note-item {
+    background: rgba(255,255,255,0.03);
+}
+
+/* Icone minimalista de comentario no paragrafo */
+.para-comment-icon {
+    position: absolute;
+    top: -12px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    color: #555;
+    border-radius: 50%;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 10;
+    transition: transform 0.2s;
+}
+body.dark-theme .para-comment-icon {
+    background-color: #1e293b;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+.para-comment-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Modal isolado de Comentarios do Paragrafo */
+.para-comment-modal {
+    position: absolute;
+    width: 320px;
+    background-color: var(--surface-color, #fff);
+    border: 1px solid var(--border-color, #e2e8f0);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+body.dark-theme .para-comment-modal {
+    background-color: var(--popover-bg, #1e293b);
+}
+.para-comment-modal.visible {
+    display: flex;
+}
+.para-comment-modal textarea, .ref-notes-panel textarea {
+    width: 100%;
+    min-height: 60px;
+    padding: 8px;
+    border: 1px solid var(--border-color, #ccc);
+    border-radius: 4px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: inherit;
+    resize: vertical;
+    font-size: 0.9em;
+}
+.mini-btn-send {
+    background-color: var(--primary-color, #2563eb);
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+    align-self: flex-end;
+}

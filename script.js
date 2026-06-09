@@ -272,7 +272,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            document.querySelectorAll('.active-para').forEach(p => p.classList.remove('active-para'));
+            document.querySelectorAll('.active-para').forEach(p => {
+                p.classList.remove('active-para');
+                const icon = p.querySelector('.para-comment-icon');
+                if (icon) icon.remove();
+            });
+            document.querySelectorAll('.para-comment-modal').forEach(m => m.remove());
             
             this.classList.add('active-para');
             currentParaId = this.dataset.id;
@@ -281,18 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             popover.innerHTML = ''; 
 
-            if (!isReport && !isRefSectionPara) {
-                let commentSectionHtml = `
-                    <div class="global-comment-section">
-                        <div class="show-comment-btn" style="cursor: pointer; font-weight: 600; margin-bottom: 0.5rem; user-select: none;">Comentário</div>
-                        <div class="comment-box hidden">
-                            <textarea placeholder="Digite seu comentário sobre este parágrafo..."></textarea>
-                            <button class="send-comment-btn">Enviar</button>
-                        </div>
-                    </div>
-                `;
-                popover.insertAdjacentHTML('beforeend', commentSectionHtml);
-            }
+            
             
             if (!refIdsRaw) {
                 popover.insertAdjacentHTML('beforeend', `<div class="ref-title" style="margin-top: 10px;">Adicionar Referência</div><p class="ref-author" style="margin-top: 5px;">Este parágrafo ainda não possui citação definida.</p>`);
@@ -328,6 +322,14 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <a ${linkAttr}>🌐 Link Direto</a>
                                     <button ${pdfAttr}>📄 Arquivo PDF</button>
                                 </div>
+                                <div class="ref-notes-container" style="text-align:center;">
+                                    <div class="ref-notes-icon" title="Anotações desta referência" data-refid="${refId}">📝</div>
+                                    <div class="ref-notes-panel">
+                                        <textarea placeholder="Adicione uma nota sobre esta referência..."></textarea>
+                                        <button class="mini-btn-send btn-send-ref-note">Salvar Nota</button>
+                                        <div class="ref-notes-list" style="text-align:left; margin-top:10px; max-height:100px; overflow-y:auto;"></div>
+                                    </div>
+                                </div>
                             </div>
                         `;
                         refContainer.innerHTML = html;
@@ -335,6 +337,77 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
             }
+
+            
+            popover.querySelectorAll('.ref-notes-icon').forEach(icon => {
+                icon.addEventListener('click', (ev) => {
+                    ev.stopPropagation();
+                    const panel = icon.nextElementSibling;
+                    panel.classList.toggle('expanded');
+                    
+                    if (panel.classList.contains('expanded')) {
+                        const refId = icon.getAttribute('data-refid');
+                        const listContainer = panel.querySelector('.ref-notes-list');
+                        
+                        const renderNotes = () => {
+                            const filtered = window.siteComments.filter(c => c.paragrafo === 'REF-' + refId);
+                            if (filtered.length === 0) {
+                                listContainer.innerHTML = '<p style="font-size:0.8em; color:#888;">Nenhuma nota ainda.</p>';
+                                return;
+                            }
+                            let html = '';
+                            filtered.forEach(item => {
+                                html += `<div class="ref-note-item">${item.comentario}</div>`;
+                            });
+                            listContainer.innerHTML = html;
+                        };
+                        renderNotes();
+
+                        // Override the button action
+                        const btn = panel.querySelector('.btn-send-ref-note');
+                        // Remove old listeners to avoid duplicates if toggled multiple times
+                        const newBtn = btn.cloneNode(true);
+                        btn.parentNode.replaceChild(newBtn, btn);
+
+                        newBtn.addEventListener('click', (ev2) => {
+                            const txt = panel.querySelector('textarea').value.trim();
+                            if (!txt) return;
+
+                            const sendReq = () => {
+                                newBtn.innerText = "Salvando...";
+                                newBtn.disabled = true;
+                                const payload = {
+                                    paragrafo: 'REF-' + refId,
+                                    comentario: txt + " - " + localStorage.getItem('reviewerName')
+                                };
+                                fetch(WEB_APP_URL, {
+                                    method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' },
+                                    body: JSON.stringify(payload)
+                                }).then(() => {
+                                    panel.querySelector('textarea').value = '';
+                                    newBtn.innerText = "Salvar Nota";
+                                    newBtn.disabled = false;
+                                    refreshGlobalComments().then(() => {
+                                        // Update just this panel dynamically
+                                        renderNotes();
+                                    });
+                                }).catch(() => {
+                                    alert("Erro ao salvar.");
+                                    newBtn.innerText = "Salvar Nota";
+                                    newBtn.disabled = false;
+                                });
+                            };
+
+                            if (!localStorage.getItem('reviewerName')) {
+                                pendingCommentAction = sendReq;
+                                document.getElementById('name-modal').classList.remove('hidden');
+                            } else {
+                                sendReq();
+                            }
+                        });
+                    }
+                });
+            });
 
             popover.querySelectorAll('.ref-header-toggle').forEach(toggle => {
                 toggle.addEventListener('click', (ev) => {
@@ -367,68 +440,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
 
-            if (!isReport && !isRefSectionPara) {
-                popover.querySelectorAll('.show-comment-btn').forEach(btn => {
-                    btn.addEventListener('click', (ev) => {
-                        ev.stopPropagation();
-                        const commentBox = btn.nextElementSibling;
-                        commentBox.classList.toggle('hidden');
-                    });
-                });
-
-                popover.querySelectorAll('.send-comment-btn').forEach(btn => {
-                    btn.addEventListener('click', (ev) => {
-                        ev.stopPropagation();
-                        const commentBox = btn.closest('.comment-box');
-                        const textarea = commentBox.querySelector('textarea');
-                        const commentText = textarea.value.trim();
-                        
-                        if (!commentText) {
-                            alert('O comentário não pode estar vazio.');
-                            return;
-                        }
-
-                        const sendCommentLogic = () => {
-                            const reviewerName = localStorage.getItem('reviewerName');
-                            const finalComment = commentText + " - " + reviewerName;
-                            const payload = {
-                                paragrafo: currentParaId,
-                                comentario: finalComment
-                            };
-                            
-                            btn.innerText = "Enviando...";
-                            btn.disabled = true;
-
-                            fetch(WEB_APP_URL, {
-                                method: 'POST',
-                                mode: 'no-cors',
-                                headers: {
-                                    'Content-Type': 'application/json'
-                                },
-                                body: JSON.stringify(payload)
-                            }).then(() => {
-                                alert('Comentário Enviado');
-                                textarea.value = '';
-                                commentBox.classList.add('hidden');
-                                btn.innerText = "Enviar";
-                                btn.disabled = false;
-                            }).catch(err => {
-                                alert('Erro ao enviar comentário.');
-                                btn.innerText = "Enviar";
-                                btn.disabled = false;
-                            });
-                        };
-
-                        if (!localStorage.getItem('reviewerName')) {
-                            pendingCommentAction = sendCommentLogic;
-                            nameModal.classList.remove('hidden');
-                        } else {
-                            sendCommentLogic();
-                        }
-                    });
-                });
-            }
-
             const rect = this.getBoundingClientRect();
             let pLeft = rect.right + 15;
             let pTop = rect.top + window.scrollY;
@@ -438,6 +449,90 @@ document.addEventListener('DOMContentLoaded', () => {
             
             popover.classList.remove('hidden');
             popover.classList.add('visible');
+            
+            // --- NEW: Paragraph Comment Icon ---
+            if (!isReport && !isRefSectionPara) {
+                // Ensure paragraph is relative to hold the absolute icon
+                this.style.position = 'relative';
+                
+                // Create icon
+                const icon = document.createElement('div');
+                icon.className = 'para-comment-icon';
+                icon.innerHTML = '💬';
+                icon.title = 'Comentar este parágrafo';
+                this.appendChild(icon);
+
+                // Create modal container
+                const paraModal = document.createElement('div');
+                paraModal.className = 'para-comment-modal';
+                paraModal.dataset.para = currentParaId;
+                paraModal.innerHTML = `
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <strong>Comentários (${currentParaId})</strong>
+                        <button class="close-para-modal" style="background:none; border:none; cursor:pointer;">✖</button>
+                    </div>
+                    <textarea placeholder="Escreva um novo comentário..."></textarea>
+                    <button class="mini-btn-send">Salvar</button>
+                    <div class="para-comments-list" style="max-height: 150px; overflow-y: auto; margin-top: 10px;"></div>
+                `;
+                
+                document.body.appendChild(paraModal);
+
+                icon.addEventListener('click', (ev) => {
+                    ev.stopPropagation();
+                    
+                    // Position the modal near the icon
+                    const iRect = icon.getBoundingClientRect();
+                    paraModal.style.top = (iRect.bottom + window.scrollY + 10) + 'px';
+                    paraModal.style.left = (iRect.left + window.scrollX - 280) + 'px'; // aligned roughly to right
+                    
+                    document.querySelectorAll('.para-comment-modal').forEach(m => m.classList.remove('visible'));
+                    paraModal.classList.add('visible');
+
+                    // Render existing comments for this paragraph
+                    renderParaModalComments(currentParaId);
+                });
+
+                paraModal.querySelector('.close-para-modal').addEventListener('click', () => {
+                    paraModal.classList.remove('visible');
+                });
+
+                paraModal.querySelector('.mini-btn-send').addEventListener('click', (ev) => {
+                    const btn = ev.target;
+                    const txt = paraModal.querySelector('textarea').value.trim();
+                    if (!txt) return;
+
+                    const sendReq = () => {
+                        btn.innerText = "Salvando...";
+                        btn.disabled = true;
+                        const payload = {
+                            paragrafo: currentParaId,
+                            comentario: txt + " - " + localStorage.getItem('reviewerName')
+                        };
+                        fetch(WEB_APP_URL, {
+                            method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        }).then(() => {
+                            paraModal.querySelector('textarea').value = '';
+                            btn.innerText = "Salvar";
+                            btn.disabled = false;
+                            refreshGlobalComments();
+                        }).catch(() => {
+                            alert("Erro ao salvar.");
+                            btn.innerText = "Salvar";
+                            btn.disabled = false;
+                        });
+                    };
+
+                    if (!localStorage.getItem('reviewerName')) {
+                        pendingCommentAction = sendReq;
+                        document.getElementById('name-modal').classList.remove('hidden');
+                    } else {
+                        sendReq();
+                    }
+                });
+            }
+
         });
     });
 
@@ -466,7 +561,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.paragraph-block') && !e.target.closest('#popover-container') && !e.target.closest('#name-modal')) {
-            document.querySelectorAll('.active-para').forEach(p => p.classList.remove('active-para'));
+            document.querySelectorAll('.active-para').forEach(p => {
+                p.classList.remove('active-para');
+                const icon = p.querySelector('.para-comment-icon');
+                if (icon) icon.remove();
+            });
+            document.querySelectorAll('.para-comment-modal').forEach(m => m.remove());
             popover.classList.add('hidden');
             popover.classList.remove('visible');
         }
@@ -510,7 +610,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (sidebarComments.classList.contains('hidden')) {
                 closeAllSidebars();
                 sidebarComments.classList.remove('hidden');
-                fetchComments();
+                refreshGlobalComments();
             } else {
                 sidebarComments.classList.add('hidden');
             }
@@ -550,22 +650,51 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch and display comments
     const commentsListContent = document.getElementById('comments-list-content');
     
-    function fetchComments() {
-        commentsListContent.innerHTML = '<p>Buscando comentários...</p>';
-        fetch(WEB_APP_URL)
+    window.siteComments = [];
+
+    // Global refresh function
+    function refreshGlobalComments() {
+        return fetch(WEB_APP_URL)
             .then(res => res.json())
             .then(data => {
-                renderComments(data);
+                window.siteComments = data;
+                // Auto-refresh the sidebar if it is open
+                if (!document.getElementById('sidebar-comments').classList.contains('hidden')) {
+                    renderSidebarComments();
+                }
+                // Auto-refresh the active paragraph modal if open
+                const openParaModal = document.querySelector('.para-comment-modal.visible');
+                if (openParaModal) {
+                    renderParaModalComments(openParaModal.dataset.para);
+                }
+                // We don't auto-refresh reference notes currently, they update on next click or we can do it manually if needed
             })
             .catch(err => {
-                console.error(err);
-                commentsListContent.innerHTML = '<p>Erro ao carregar comentários. Verifique a conexão ou a URL do script.</p>';
+                console.error("Erro ao carregar banco de comentarios global: ", err);
             });
     }
 
-    function renderComments(commentsArray) {
+    // Call once on page load
+    refreshGlobalComments();
+
+    function fetchComments() {
+        const commentsListContent = document.getElementById('comments-list-content');
+        targetContainer.innerHTML = '<p>Buscando comentários...</p>';
+        refreshGlobalComments().then(() => {
+            renderSidebarComments();
+        });
+    }
+
+    function renderSidebarComments() {
+        const commentsListContent = document.getElementById('comments-list-content');
+        // Filter out Reference Notes from the sidebar
+        const filteredArray = window.siteComments.filter(item => !item.paragrafo.startsWith('REF-'));
+        renderComments(filteredArray, commentsListContent);
+    }
+
+    function renderComments(commentsArray, targetContainer) {
         if (!commentsArray || commentsArray.length === 0) {
-            commentsListContent.innerHTML = '<p style="padding:15px; text-align:center; color:#888;">Nenhum comentário encontrado.</p>';
+            targetContainer.innerHTML = '<p style="padding:15px; text-align:center; color:#888;">Nenhum comentário encontrado.</p>';
             return;
         }
 
@@ -631,10 +760,10 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         });
 
-        commentsListContent.innerHTML = html;
+        targetContainer.innerHTML = html;
 
         // Attaching Events
-        const cards = commentsListContent.querySelectorAll('.comment-card');
+        const cards = targetContainer.querySelectorAll('.comment-card');
         
         cards.forEach(card => {
             const summary = card.querySelector('.comment-card-summary');
@@ -788,16 +917,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // General Comment Logic
+    
     const btnSendGeneral = document.getElementById('btn-send-general');
     const inputGeneral = document.getElementById('general-comment-input');
     
     if (btnSendGeneral && inputGeneral) {
+        // Smart visibility logic
+        const checkBtnVisibility = () => {
+            if (document.activeElement === inputGeneral || inputGeneral.value.trim().length > 0) {
+                btnSendGeneral.classList.add('visible');
+            } else {
+                btnSendGeneral.classList.remove('visible');
+            }
+        };
+
+        inputGeneral.addEventListener('focus', checkBtnVisibility);
+        inputGeneral.addEventListener('blur', checkBtnVisibility);
+        inputGeneral.addEventListener('input', checkBtnVisibility);
+
         btnSendGeneral.addEventListener('click', () => {
             const txt = inputGeneral.value.trim();
             if (!txt) {
                 alert("O comentário geral não pode estar vazio.");
                 return;
             }
+
 
             const sendGeneralLogic = () => {
                 const reviewerName = localStorage.getItem('reviewerName');
@@ -839,3 +983,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
 });
+
+    window.renderParaModalComments = function(paraId) {
+        const modal = document.querySelector('.para-comment-modal.visible');
+        if (!modal) return;
+        const listContainer = modal.querySelector('.para-comments-list');
+        
+        const filtered = window.siteComments.filter(c => c.paragrafo === paraId);
+        if (filtered.length === 0) {
+            listContainer.innerHTML = '<p style="font-size:0.8em; color:#888;">Nenhum comentário ainda.</p>';
+            return;
+        }
+
+        let html = '';
+        filtered.forEach(item => {
+            html += `
+                <div class="ref-note-item">
+                    <div style="font-weight:bold; font-size:0.9em; margin-bottom:4px;">${item.data || ''}</div>
+                    ${item.comentario}
+                </div>
+            `;
+        });
+        listContainer.innerHTML = html;
+    };
