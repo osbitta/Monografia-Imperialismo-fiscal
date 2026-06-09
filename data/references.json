@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ref-amin",
+    "author": "AMIN, Samir",
+    "title": "A Lei do Valor Mundializada. In: O Desenvolvimento Desigual: Ensaio sobre as formações sociais do capitalismo periférico",
+    "year": "1976",
+    "publisher": "Forense-Universitária",
+    "link": null,
+    "type": "book"
+  },
+  {
+    "id": "ref-avi-yonah",
+    "author": "AVI-YONAH, Reuven S.",
+    "title": "Globalization, Tax Competition, and the Fiscal Crisis of the Welfare State",
+    "year": "2000",
+    "publisher": "Harvard Law Review, v. 113, n. 6",
+    "link": "https://repository.law.umich.edu/cgi/viewcontent.cgi?article=1049&context=articles",
+    "type": "article"
+  },
+  {
+    "id": "ref-harvey",
+    "author": "HARVEY, David",
+    "title": "O Novo Imperialismo",
+    "year": "2004",
+    "publisher": "Edições Loyola",
+    "link": null,
+    "type": "book"
+  },
+  {
+    "id": "ref-piketty",
+    "author": "PIKETTY, Thomas",
+    "title": "Capital e Ideologia",
+    "year": "2020",
+    "publisher": "Intrínseca",
+    "link": null,
+    "type": "book"
+  },
+  {
+    "id": "ref-tjn",
+    "author": "TAX JUSTICE NETWORK (TJN)",
+    "title": "The State of Tax Justice 2024",
+    "year": "2024",
+    "publisher": "Tax Justice Network",
+    "link": "https://taxjustice.net/reports/the-state-of-tax-justice-2024/",
+    "type": "report"
+  },
+  {
+    "id": "ref-ocde-2021",
+    "author": "OCDE",
+    "title": "Tax Challenges Arising from the Digitalisation of the Economy – Global Anti-Base Erosion (GloBE) Model Rules",
+    "year": "2021",
+    "publisher": "OECD Publishing",
+    "link": "https://www.oecd.org/tax/beps/tax-challenges-arising-from-the-digitalisation-of-the-economy-global-anti-base-erosion-globe-model-rules-pillar-two.htm",
+    "type": "report"
+  },
+  {
+    "id": "ref-onu-2023",
+    "author": "NAÇÕES UNIDAS (ONU)",
+    "title": "Resolução A/RES/78/230. Promotion of inclusive and effective international tax cooperation at the United Nations",
+    "year": "2023",
+    "publisher": "Assembleia Geral",
+    "link": "https://documents-dds-ny.un.org/doc/UNDOC/GEN/N23/432/38/PDF/N2343238.pdf",
+    "type": "resolution"
+  }
+]
