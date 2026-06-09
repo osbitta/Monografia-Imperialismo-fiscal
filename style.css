@@ -639,7 +639,7 @@ body {
     width: 350px;
     max-width: 90vw;
     height: 100vh;
-    background-color: var(--surface-color, #ffffff);
+    background-color: var(--surface, #ffffff);
     box-shadow: 2px 0 10px rgba(0,0,0,0.5);
     z-index: 2000;
     transform: translateX(0);
@@ -832,16 +832,19 @@ body.dark-theme .comment-item {
         padding: 1rem 1rem;
     }
     .nav-content {
-        padding: 0.8rem 1rem;
-        flex-direction: column;
-        align-items: flex-start !important;
-        gap: 15px;
+        padding: 0.5rem 1rem;
+        flex-direction: row;
+        align-items: center !important;
+        gap: 10px;
     }
     .navbar-titles {
-        text-align: left !important;
+        text-align: right !important;
     }
     .nav-content h1 {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
+    }
+    .navbar-titles p {
+        font-size: 0.70rem;
     }
     .document-header h2 {
         font-size: 1.8rem;
@@ -874,7 +877,7 @@ body.dark-theme .comment-item {
     border: 1px solid var(--border-color, #e2e8f0);
     border-radius: 8px;
     margin-bottom: 12px;
-    background-color: var(--surface-color, #fff);
+    background-color: var(--surface, #fff);
     overflow: hidden;
     transition: box-shadow 0.2s;
 }
@@ -926,7 +929,7 @@ body.dark-theme .comment-card-summary:hover {
     display: none;
     padding: 15px;
     border-top: 1px dashed var(--border-color, #e2e8f0);
-    background-color: var(--surface-color, #fff);
+    background-color: var(--surface, #fff);
 }
 
 body.dark-theme .comment-card-details {
@@ -1118,7 +1121,7 @@ body.dark-theme .para-comment-icon {
 .para-comment-modal {
     position: absolute;
     width: 320px;
-    background-color: var(--surface-color, #fff);
+    background-color: var(--surface, #fff);
     border: 1px solid var(--border-color, #e2e8f0);
     border-radius: 8px;
     padding: 15px;
