@@ -1,0 +1,652 @@
+[
+  {
+    "id": "imperialismo",
+    "termo": "Imperialismo",
+    "sinonimos": [
+      "Imperialismo",
+      "Novo Imperialismo",
+      "imperialismo clássico",
+      "imperialismo contemporâneo",
+      "fase superior do capitalismo",
+      "dominação econômica global",
+      "espoliação moderna"
+    ],
+    "significado": "Fase de desenvolvimento do modo de produção capitalista caracterizada pela dominância dos monopólios, pela fusão do capital bancário e industrial no capital financeiro, pela primazia da exportação de capital sobre a de mercadorias e pela divisão transnacional do trabalho. Na contemporaneidade (David Harvey), opera pela articulação dialética entre a coerção territorial do Estado e as finanças desreguladas.",
+    "ocorrencias": "Capa (P1, P2); Resumo (P1); Cap. 1 (P1, P2, P6); Cap. 2.1 (P1, P2, P4); Cap. 6 (P1)."
+  },
+  {
+    "id": "imperialismo-fiscal",
+    "termo": "Imperialismo Fiscal",
+    "sinonimos": [
+      "Imperialismo Fiscal",
+      "ordem do imperialismo fiscal",
+      "arquitetura do imperialismo fiscal",
+      "coerção tributária transnacional",
+      "espoliação fiscal legalizada"
+    ],
+    "significado": "Arquitetura jurídica, institucional e geopolítica imposta pelas potências centrais e por fóruns fechados (OCDE) que molda as normas tributárias mundiais para privilegiar a remessa e a não tributação do capital corporativo na origem periférica, retirando do Sul Global a competência soberana de reter tributos sobre o valor econômico gerado em seus territórios (Okanga &amp; Brooks; Zhang).",
+    "ocorrencias": "Resumo (P1); Palavras-chave; Cap. 1 (P3); Cap. 2.1 (P2); Cap. 2.2 (P3); Cap. 2.3 (Título, P2, P3); Cap. 3 (P1); Cap. 3.3 (P4); Cap. 4 (Título, P1); Cap. 4.3 (Título, P4, P6); Cap. 5 (P1); Cap. 6 (P2)."
+  },
+  {
+    "id": "acumulacao-por-espoliacao",
+    "termo": "Acumulação por Espoliação",
+    "sinonimos": [
+      "Acumulação por Espoliação",
+      "Acumulação por espoliação",
+      "espoliação estrutural",
+      "espoliação moderna",
+      "processos contínuos de espoliação",
+      "expropriação de fundos públicos"
+    ],
+    "significado": "Modalidade permanente de acumulação de capital mobilizada pelo capital financeiro quando a acumulação regular via produção de mais-valia atinge barreiras de rentabilidade. Opera mediante precarização, pilhagem de recursos naturais, apropriação privada de patrimônios públicos e destruição forçada da arrecadação estatal da periferia (David Harvey; Rosa Luxemburgo).",
+    "ocorrencias": "Resumo (P1); Cap. 1 (P2); Cap. 2.1 (P1, P4); Cap. 4.2 (Título); Cap. 6 (P1)."
+  },
+  {
+    "id": "lei-do-valor-mundializada",
+    "termo": "Lei do Valor Mundializada",
+    "sinonimos": [
+      "Lei do Valor Mundializada",
+      "Lei do valor mundializada",
+      "polarização centro-periferia",
+      "transferência de mais-valia",
+      "economias centrais e periféricas",
+      "espoliação da periferia"
+    ],
+    "significado": "Funcionamento da lei do valor em escala planetária no qual as mercadorias circulam internacionalmente sob um sistema unificado de preços mundiais, enquanto a força de trabalho permanece remunerada a taxas substancialmente desiguais entre centro e periferia, viabilizando a transferência sistemática de excedente para as economias hegemônicas (Samir Amin).",
+    "ocorrencias": "Resumo (P1); Palavras-chave; Cap. 1 (P4); Cap. 2.1 (P1); Cap. 3 (P1); Cap. 4.2 (P3); Cap. 4.3 (P6); Cap. 5 (P1)."
+  },
+  {
+    "id": "troca-desigual",
+    "termo": "Troca Desigual",
+    "sinonimos": [
+      "Troca Desigual",
+      "Troca desigual",
+      "transferências desiguais de valor",
+      "assimetria nas trocas internacionais",
+      "unequal exchange"
+    ],
+    "significado": "Dinâmica do comércio e das finanças internacionais em que os países periféricos necessitam despender volume desproporcionalmente maior de tempo de trabalho socialmente necessário para obter uma quantidade menor de trabalho corporificado em bens industriais, serviços e ativos intangíveis do centro (Arghiri Emmanuel; Samir Amin).",
+    "ocorrencias": "Cap. 1 (P2, P4); Cap. 2.1 (P1); Cap. 6 (P1, P2)."
+  },
+  {
+    "id": "spatio-temporal-fixes",
+    "termo": "Ordenações Espaço-Temporais",
+    "sinonimos": [
+      "Ordenações Espaço-Temporais",
+      "Ordenações espaço-temporais",
+      "soluções espaço-temporais",
+      "saídas geográficas do capital",
+      "spatio-temporal fixes"
+    ],
+    "significado": "Mecanismos geográficos e financeiros de postergação e absorção de crises de sobreacumulação do centro, consubstanciados na transferência física de capitais para novas regiões territoriais e no diferimento de liquidez em compromissos e ativos de longo prazo, incluindo o represamento em paraísos fiscais (David Harvey).",
+    "ocorrencias": "Cap. 2.1 (P1, P2); Cap. 3 (P1); Cap. 6 (P1)."
+  },
+  {
+    "id": "aperto-fiscal",
+    "termo": "Aperto Fiscal",
+    "sinonimos": [
+      "Aperto Fiscal",
+      "Aperto fiscal",
+      "aperto fiscal estrutural",
+      "desidratação tarifária",
+      "corte abrupto de tarifas alfandegárias",
+      "fiscal squeeze",
+      "fiscal faux pas"
+    ],
+    "significado": "Asfixia orçamentária crônica e acelerada sofrida pelas nações periféricas a partir das reformas de abertura comercial dos anos 1980 e 1990, decorrente da eliminação de tarifas aduaneiras sem a edificação prévia de uma estrutura tributária interna progressiva sobre a renda e o patrimônio (Khattry &amp; Rao; Keen &amp; Lockwood).",
+    "ocorrencias": "Cap. 2 (Sumário); Cap. 2.1 (Título, P3, P4)."
+  },
+  {
+    "id": "crise-fiscal-estado",
+    "termo": "Crise Fiscal do Estado",
+    "sinonimos": [
+      "Crise Fiscal do Estado",
+      "Crise fiscal do Estado",
+      "crise fiscal do Estado contemporâneo",
+      "impossibilidade do Estado social",
+      "estrangulamento das finanças públicas"
+    ],
+    "significado": "Incapacidade crônica do Estado moderno de financiar serviços públicos essenciais e garantias sociais decorrente da desregulamentação financeira e da fuga do capital corporativo e patrimonial para jurisdições desreguladas, inviabilizando o critério territorial clássico de tributação (Reuven S. Avi-Yonah).",
+    "ocorrencias": "Cap. 1 (P6); Cap. 2.2 (Título, P1); Cap. 2.3 (P1)."
+  },
+  {
+    "id": "hipermobilidade-capital",
+    "termo": "Hipermobilidade do Capital",
+    "sinonimos": [
+      "Hipermobilidade do Capital",
+      "Hipermobilidade do capital",
+      "hiper-mobilidade do capital digital",
+      "fluidez do capital financeiro",
+      "desterritorialização do capital"
+    ],
+    "significado": "Capacidade tecnológica e regulatória do capital corporativo e financeiro contemporâneo de movimentar massas colossais de liquidez entre fronteiras nacionais instantaneamente, explorando assimetrias legislativas e subtraindo-se à jurisdição fiscal de onde a atividade produtiva foi realizada (Avi-Yonah).",
+    "ocorrencias": "Cap. 2.2 (P1); Cap. 2.3 (P1); Apêndice A (Introdução)."
+  },
+  {
+    "id": "corrida-para-o-fundo",
+    "termo": "Corrida para o Fundo",
+    "sinonimos": [
+      "Corrida para o Fundo",
+      "Corrida para o fundo",
+      "race to the bottom",
+      "corrida para o fundo do poço",
+      "guerra fiscal",
+      "competição tributária predatória",
+      "atratividade fiscal"
+    ],
+    "significado": "Dinâmica de rivalidade interestatal não cooperativa na qual governos reduzem sucessivamente alíquotas do imposto corporativo e multiplicam renúncias fiscais para atrair capitais voláteis, resultando em retração líquida da arrecadação pública global sem aumento do investimento físico agregado (Genschel &amp; Schwarz; Peter, Buttrick &amp; Duncan).",
+    "ocorrencias": "Cap. 2.2 (P1, P2); Cap. 2.3 (P2); Cap. 3.3 (P3); Apêndice A (Mecanismo 19, P1, P2)."
+  },
+  {
+    "id": "regressividade-tributaria",
+    "termo": "Regressividade Tributária",
+    "sinonimos": [
+      "Regressividade Tributária",
+      "Regressividade tributária",
+      "perfil regressivo do sistema fiscal",
+      "tributos indiretos e regressivos",
+      "sobretaxação do consumo",
+      "tributação sobre o consumo popular"
+    ],
+    "significado": "Conformação estrutural na qual cidadãos de menor renda suportam uma carga tributária relativa substancialmente superior à das camadas mais ricas. Ocorre pela imposição de impostos indiretos sobre bens e serviços essenciais (como IVA/ICMS) para compensar a não tributação do capital móvel corporativo (Keen &amp; Lockwood; OCDE).",
+    "ocorrencias": "Resumo (P1); Cap. 2.2 (P2); Cap. 2.3 (P1, P3); Cap. 4.3 (P6)."
+  },
+  {
+    "id": "custo-de-oportunidade-speed",
+    "termo": "Custo de Oportunidade Social",
+    "sinonimos": [
+      "Custo de Oportunidade Social",
+      "Custo de oportunidade",
+      "custo de oportunidade social",
+      "privação social material",
+      "base SPEED",
+      "avaliação de impacto em serviços públicos"
+    ],
+    "significado": "Métrica metodológica que mensura a quantidade de investimentos e serviços públicos fundamentais em Saúde, Educação e Infraestrutura que a população deixa de receber em razão da perda de receitas públicas drenadas pelo abuso fiscal e pela evasão internacional (Yu, Magalhães &amp; Benin / IFPRI; TJN).",
+    "ocorrencias": "Resumo (P1); Cap. 3.3 (P4); Cap. 4.3 (Título, P1, P3, P5)."
+  },
+  {
+    "id": "tax-to-gdp",
+    "termo": "Carga Tributária/PIB (Tax-to-GDP)",
+    "sinonimos": [
+      "Carga Tributária/PIB",
+      "Tax-to-GDP",
+      "relação tributo/PIB",
+      "carga tributária em relação ao PIB",
+      "arrecadação tributária e Produto Interno Bruto"
+    ],
+    "significado": "Indicador econômico internacionalmente padronizado pela OCDE que afere o montante total de receitas tributárias compulsórias auferidas pelo Estado como proporção percentual do PIB em determinado exercício financeiro.",
+    "ocorrencias": "Cap. 4.3 (P1, P4); Cap. 5.1 (P2)."
+  },
+  {
+    "id": "desalinhamento-de-lucros",
+    "termo": "Desalinhamento de Lucros",
+    "sinonimos": [
+      "Desalinhamento de Lucros",
+      "Desalinhamento de lucros",
+      "profit misalignment",
+      "lucros corporativos transferidos",
+      "transferência artificial de lucros",
+      "profit shifting"
+    ],
+    "significado": "Indicador empírico baseado em dados do CbCR/OCDE que mede a discrepância entre a localização geográfica onde o lucro contábil é reportado e o local onde os fatores substantivos da produção (trabalhadores, salários e ativos operacionais) estão de fato estabelecidos (Tax Justice Network).",
+    "ocorrencias": "Cap. 4.2 (P1, P2); Apêndice A (Metodologia, P2)."
+  },
+  {
+    "id": "gastos-tributarios",
+    "termo": "Gastos Tributários e Renúncias Fiscais",
+    "sinonimos": [
+      "Gastos Tributários e Renúncias Fiscais",
+      "Gastos tributários",
+      "renúncias fiscais",
+      "tax expenditures",
+      "benefícios fiscais",
+      "incentivos fiscais predatórios",
+      "isenções tributárias"
+    ],
+    "significado": "Despesas indiretas do erário público operacionalizadas por meio de isenções, deduções, alíquotas preferenciais e diferimentos concedidos a corporações transnacionais sob o pretexto de fomento econômico, esvaziando a capacidade financeira estatal sem contrapartidas produtivas proporcionais.",
+    "ocorrencias": "Cap. 2.3 (P2); Cap. 4.1 (P2); Apêndice A (Mecanismo 19, P2)."
+  },
+  {
+    "id": "phantom-fdi",
+    "termo": "Phantom FDI (IED Fantasma)",
+    "sinonimos": [
+      "Phantom FDI",
+      "investimento fantasma",
+      "investimentos fantasmas",
+      "investimento fictício",
+      "investimentos fictícios",
+      "IED de papel"
+    ],
+    "significado": "Fluxos financeiros transfronteiriços registrados estatisticamente em contas nacionais como Investimento Estrangeiro Direto (IED), mas que não financiam capacidade produtiva real, fábricas ou empregos, destinando-se apenas a transitar por veículos societários de papel para otimização fiscal agressiva (Damgaard, Elkjaer &amp; Johannesen; UNCTAD).",
+    "ocorrencias": "Cap. 4.3 (P4); Apêndice A (Mecanismo 16, P1; Mecanismo 17, Título, P1)."
+  },
+  {
+    "id": "spe-special-purpose-entities",
+    "termo": "Sociedades de Propósito Específico (SPEs)",
+    "sinonimos": [
+      "Sociedades de Propósito Específico",
+      "SPEs",
+      "Special Purpose Entities",
+      "veículos de investimento de papel",
+      "entidades corporativas instrumentais"
+    ],
+    "significado": "Pessoas jurídicas constituídas para propósitos delimitados de deter participações acionárias, intermediar financiamentos intragrupo ou isolar ativos de risco, amplamente utilizadas na triangulação offshore de capitais sem possuir instalações físicas substantivas (UNCTAD).",
+    "ocorrencias": "Cap. 4.3 (P4); Apêndice A (Mecanismo 17, P1)."
+  },
+  {
+    "id": "shell-companies",
+    "termo": "Empresas de Fachada (Shell Companies)",
+    "sinonimos": [
+      "Empresas de Fachada",
+      "Shell companies",
+      "empresas de fachada",
+      "corporações de fachada",
+      "sociedades de fachada",
+      "firmas de gaveta",
+      "entidades de papel"
+    ],
+    "significado": "Empresas formalmente registradas que não possuem funcionários, escritórios autônomos ou atividade mercantil substantiva no local de registro, servindo como véu de opacidade para ocultar patrimônio e canalizar lucros tributáveis para fora da jurisdição de origem (ICIJ; Zucman).",
+    "ocorrencias": "Cap. 3.1 (P1, P2); Apêndice A (Mecanismo 1, Título, P1; Mecanismo 17, P1)."
+  },
+  {
+    "id": "letterbox-companies",
+    "termo": "Empresas Caixa de Correio (Letterbox)",
+    "sinonimos": [
+      "Empresas Caixa de Correio",
+      "Letterbox companies",
+      "empresas caixa de correio",
+      "empresas de caixa postal",
+      "caixas de correio em Amsterdã",
+      "entidades pass-through"
+    ],
+    "significado": "Entidades cuja presença jurídica resume-se a um endereço postal partilhado com centenas de outras firmas no escritório de um agente fiduciário registrado, funcionando como condutos puramente burocráticos para trânsito de royalties e dividendos sem retenção na fonte.",
+    "ocorrencias": "Apêndice A (Mecanismo 1, P2; Mecanismo 8, P1)."
+  },
+  {
+    "id": "trust",
+    "termo": "Trust (Fideicomisso)",
+    "sinonimos": [
+      "Trust",
+      "trusts",
+      "trusts discricionários",
+      "fideicomisso offshore",
+      "estruturas fiduciárias anglo-saxãs",
+      "blindagem patrimonial fiduciária"
+    ],
+    "significado": "Contrato de direito consuetudinário anglo-saxão pelo qual um instituidor transfere legalmente ativos a um administrador fiduciário (trustee) para que este os administre em benefício de terceiros, cindindo a titularidade formal da fruição econômica real para blindar riquezas e evitar tributação de heranças e ganhos de capital (ICIJ).",
+    "ocorrencias": "Apêndice A (Mecanismo 2, Título, P1, P2)."
+  },
+  {
+    "id": "beneficiario-final-ubo",
+    "termo": "Beneficiário Efetivo Final (UBO)",
+    "sinonimos": [
+      "Beneficiário Efetivo Final",
+      "Beneficiário final",
+      "UBO",
+      "Ultimate Beneficial Owner",
+      "beneficiário econômico",
+      "pessoa física controladora final",
+      "titular econômico oculto"
+    ],
+    "significado": "Pessoa natural que, em última análise, detém a propriedade ou o controle corporativo efetivo direto ou indireto de uma pessoa jurídica, ou em cujo interesse uma transação patrimonial é conduzida, cuja identificação é sistematicamente obstruída por cadeias de holdings offshore.",
+    "ocorrencias": "Cap. 3.1 (P2); Apêndice A (Mecanismo 2, P2)."
+  },
+  {
+    "id": "debt-shifting",
+    "termo": "Transferência de Dívida (Debt Shifting)",
+    "sinonimos": [
+      "Transferência de Dívida",
+      "Debt Shifting",
+      "transferência artificial de dívida",
+      "despesas financeiras artificiais",
+      "empréstimos intragrupo",
+      "juros dedutíveis artificiais"
+    ],
+    "significado": "Manobra financeira interna na qual uma afiliada financeira situada em paraíso fiscal concede empréstimo com juros elevados a uma subsidiária operacional na periferia, convertendo lucros operacionais em despesas de juros dedutíveis para abater o imposto de renda local (OCDE BEPS Ação 4; UNCTAD).",
+    "ocorrencias": "Cap. 3 (P2); Apêndice A (Mecanismo 9, Título, P1, P2, P3)."
+  },
+  {
+    "id": "thin-capitalization",
+    "termo": "Subcapitalização (Thin Capitalization)",
+    "sinonimos": [
+      "Subcapitalização",
+      "thin capitalization",
+      "regras de subcapitalização",
+      "desproporção dívida/capital social",
+      "alavancagem artificial intragrupo"
+    ],
+    "significado": "Financiamento desproporcional de uma empresa mediante endividamento com partes relacionadas em detrimento de capital social próprio, visando maximizar o volume de despesas financeiras dedutíveis e esvaziar a base de incidência fiscal territorial.",
+    "ocorrencias": "Apêndice A (Mecanismo 9, P3)."
+  },
+  {
+    "id": "debt-dumping",
+    "termo": "Alocação Agressiva de Dívida (Debt Dumping)",
+    "sinonimos": [
+      "Alocação Agressiva de Dívida",
+      "Debt Dumping",
+      "alocação agressiva de dívida",
+      "aquisições alavancadas",
+      "LBO",
+      "Leveraged Buyouts",
+      "sobre-endividamento provocado"
+    ],
+    "significado": "Estratégia de carregar passivos financeiros e empréstimos contraídos por controladores internacionais diretamente no balanço da subsidiária operacional adquirida na periferia, transformando empresas lucrativas em entidades deficitárias para fins tributários.",
+    "ocorrencias": "Apêndice A (Mecanismo 15, Título, P1, P2)."
+  },
+  {
+    "id": "hybrid-mismatches",
+    "termo": "Descasamento Híbrido (Hybrid Mismatch)",
+    "sinonimos": [
+      "Descasamento Híbrido",
+      "Descasamento híbrido",
+      "descasamentos híbridos",
+      "hybrid mismatches",
+      "assimetrias de qualificação jurídica",
+      "instrumentos financeiros híbridos"
+    ],
+    "significado": "Planejamento que explora disparidades entre ordenamentos jurídicos sobre a natureza contábil de uma entidade ou contrato, permitindo que uma remessa seja abatida como juro no país emissor e tratada como dividendo isento no país receptor.",
+    "ocorrencias": "Apêndice A (Mecanismo 10, Título, P1, P2)."
+  },
+  {
+    "id": "deducao-nao-inclusao-dni",
+    "termo": "Dedução/Não-Inclusão (D/NI)",
+    "sinonimos": [
+      "Dedução/Não-Inclusão",
+      "D/NI",
+      "deduction and non-inclusion",
+      "dupla não-tributação por assimetria",
+      "despesa deduzida sem receita tributada"
+    ],
+    "significado": "Resultado fiscal no qual um desembolso gera redução da base tributável no país pagador (origem) sem que ocorra a respectiva inclusão tributária como renda auferida no país beneficiário (destino), neutralizando o imposto em ambas as pontas (OCDE BEPS Ação 2).",
+    "ocorrencias": "Apêndice A (Mecanismo 10, P2)."
+  },
+  {
+    "id": "estruturas-de-conduite",
+    "termo": "Estruturas de Conduíte",
+    "sinonimos": [
+      "Estruturas de Conduíte",
+      "Estruturas de conduíte",
+      "empresas conduíte",
+      "centros de trânsito societário",
+      "intermediários de passagem",
+      "condutos tributários"
+    ],
+    "significado": "Pessoas jurídicas ou filiais interpostas em países desenvolvidos dotados de ampla rede de tratados bilaterais (como Holanda e Luxemburgo), utilizadas unicamente para canalizar fluxos de capitais da periferia em direção a paraísos fiscais de alíquota zero sem incidência tributária.",
+    "ocorrencias": "Apêndice A (Mecanismo 14, P1; Mecanismo 16, P2)."
+  },
+  {
+    "id": "round-tripping",
+    "termo": "Round-Tripping",
+    "sinonimos": [
+      "Round-Tripping",
+      "Round-tripping",
+      "viagem de ida e volta do capital",
+      "retorno disfarçado de capital local",
+      "simulação de investimento estrangeiro"
+    ],
+    "significado": "Manobra societária de elisão agressiva na qual recursos financeiros gerados internamente por elites locais são transferidos para offshores e reingressam no país de origem como IED fictício para capturar benefícios fiscais e jurídicos concedidos pela lei local a investidores estrangeiros.",
+    "ocorrencias": "Apêndice A (Mecanismo 16, Título, P1, P2)."
+  },
+  {
+    "id": "precos-de-transferencia",
+    "termo": "Preços de Transferência (Transfer Pricing)",
+    "sinonimos": [
+      "Preços de Transferência",
+      "Transfer Pricing",
+      "manipulação de preços entre filiais",
+      "superfaturamento e subfaturamento interno",
+      "distorção contábil intragrupo"
+    ],
+    "significado": "Precificação contábil fixada para a circulação de bens, insumos, serviços e ativos intangíveis entre filiais e controladoras de um mesmo conglomerado econômico internacional, rotineiramente manipulada para alocar artificialmente lucros em paraísos fiscais e custos na periferia.",
+    "ocorrencias": "Resumo (P1); Cap. 3 (P2); Cap. 3.2 (Título, P1); Cap. 4.3 (P2); Apêndice A (Mecanismo 5, Título, P1, P2)."
+  },
+  {
+    "id": "principio-arms-length",
+    "termo": "Princípio Arm's Length",
+    "sinonimos": [
+      "Princípio Arm's Length",
+      "preço de plena concorrência",
+      "padrão de mercado aberto",
+      "regra de mercado da OCDE"
+    ],
+    "significado": "Diretriz histórica da OCDE segundo a qual os preços praticados entre entidades vinculadas devem refletir as condições e preços que seriam pactuados entre firmas independentes no mercado aberto, cuja aplicação fenece na precificação de bens intangíveis exclusivos (Zucman; Avi-Yonah).",
+    "ocorrencias": "Cap. 3.2 (P1); Apêndice A (Mecanismo 5, P1, P2)."
+  },
+  {
+    "id": "trade-misinvoicing",
+    "termo": "Fraude Aduaneira em Commodities (Trade Misinvoicing)",
+    "sinonimos": [
+      "Fraude Aduaneira em Commodities",
+      "Trade misinvoicing",
+      "subfaturamento e superfaturamento de exportações",
+      "fraudes aduaneiras",
+      "manipulação de preços no comércio exterior",
+      "desvio de faturamento primário"
+    ],
+    "significado": "Prática ilícita de evasão fiscal e contrabando cambial baseada na falsificação dolosa de faturas de importação e exportação de bens primários (minérios, grãos e petróleo), com o objetivo de evadir controles cambiais e subtrair receitas tributárias da alfândega do país de extração.",
+    "ocorrencias": "Apêndice A (Mecanismo 6, Título, P1, P2)."
+  },
+  {
+    "id": "elisao-fiscal-digital",
+    "termo": "Elisão Fiscal Digital",
+    "sinonimos": [
+      "Elisão Fiscal Digital",
+      "Elisão fiscal digital",
+      "Digital Tax Avoidance",
+      "desmaterialização da base tributária",
+      "faturamento em nuvem",
+      "monetização de dados sem nexus físico"
+    ],
+    "significado": "Modelo de negócio no qual multinacionais de plataformas e serviços digitais auferem faturamentos colossais sobre consumidores na periferia sem manter escritórios físicos ou funcionários no território, impedindo a incidência das regras tributárias tradicionais de conexão espacial.",
+    "ocorrencias": "Apêndice A (Mecanismo 11, Título, P1, P2)."
+  },
+  {
+    "id": "estabelecimento-permanente",
+    "termo": "Estabelecimento Permanente (PE)",
+    "sinonimos": [
+      "Estabelecimento Permanente",
+      "Permanent Establishment",
+      "presença física duradoura",
+      "critério de nexo territorial",
+      "plantas fabris fixas"
+    ],
+    "significado": "Conceito clássico do direito internacional que condiciona o poder de tributação de uma jurisdição anfitriã sobre empresas estrangeiras à existência de instalações físicas fixas, tangíveis e permanentes (fábricas, escritórios ou filiais) em seu território soberano.",
+    "ocorrencias": "Cap. 2.2 (P1); Apêndice A (Mecanismo 11, P1; Mecanismo 12, P1)."
+  },
+  {
+    "id": "treaty-shopping",
+    "termo": "Abuso de Tratados e Treaty Shopping",
+    "sinonimos": [
+      "Abuso de Tratados e Treaty Shopping",
+      "Treaty shopping",
+      "abuso de acordos internacionais",
+      "abuso de acordos bilaterais",
+      "triangulação indevida de tratados",
+      "exploração de ADTs"
+    ],
+    "significado": "Interposição de empresas instrumentais em países com ampla rede de Acordos de Dupla Tributação (ADTs) com o propósito específico de usufruir de alíquotas preferenciais ou isenções do Imposto Retido na Fonte (WHT) sobre remessas de dividendos, juros e royalties de países periféricos.",
+    "ocorrencias": "Resumo (P1); Cap. 3 (P2); Apêndice A (Mecanismo 14, Título, P1, P2)."
+  },
+  {
+    "id": "imposto-retido-fonte-wht",
+    "termo": "Imposto Retido na Fonte (Withholding Tax - WHT)",
+    "sinonimos": [
+      "Imposto Retido na Fonte",
+      "Withholding Tax",
+      "WHT",
+      "alíquotas de retenção na fonte",
+      "tributação no momento da remessa ao exterior"
+    ],
+    "significado": "Tributo recolhido compulsoriamente no ato da remessa de dividendos, juros, royalties e pagamentos de serviços para fora do território nacional, constituindo a principal barreira de defesa fiscal dos países periféricos contra a drenagem de lucros.",
+    "ocorrencias": "Apêndice A (Mecanismo 14, P1, P2)."
+  },
+  {
+    "id": "sistema-isds",
+    "termo": "Sistema ISDS (Arbitragem Investidor-Estado)",
+    "sinonimos": [
+      "Sistema ISDS",
+      "arbitragem investidor-Estado",
+      "Investor-State Dispute Settlement",
+      "tribunais arbitrais privados internacionais",
+      "cortes CIADI"
+    ],
+    "significado": "Cláusula compromissória de tratados de investimento que autoriza multinacionais a acionarem governos soberanos diretamente em cortes de arbitragem privadas fora do Judiciário nacional, buscando indenizações financeiras por reformas tributárias que afetem lucros futuros esperados (UNCTAD).",
+    "ocorrencias": "Apêndice A (Mecanismo 22, Título, P1, P2)."
+  },
+  {
+    "id": "bloqueio-regulatorio",
+    "termo": "Bloqueio Regulatório (Regulatory Chill)",
+    "sinonimos": [
+      "Bloqueio Regulatório",
+      "Bloqueio regulatório",
+      "regulatory chill",
+      "efeito inibitório regulatório",
+      "autocensura legislativa",
+      "paralisia de reformas progressivas"
+    ],
+    "significado": "Efeito coercitivo indireto provocado pela ameaça de processos arbitrais no sistema ISDS, que induz governos periféricos a recuarem da aprovação de legislações tributárias progressivas, revogação de isenções e fiscalizações ambientais por temor de condenações bilionárias.",
+    "ocorrencias": "Apêndice A (Mecanismo 22, P2)."
+  },
+  {
+    "id": "modelo-acfi-brasil",
+    "termo": "Modelo Brasileiro de ACFI",
+    "sinonimos": [
+      "Modelo Brasileiro de ACFI",
+      "Modelo ACFI",
+      "Acordo de Cooperação e Facilitação de Investimentos",
+      "modelo pioneiro de ACFI",
+      "governança preventiva de investimentos"
+    ],
+    "significado": "Modelo convencional de acordos internacionais de investimentos concebido pelo Brasil que rejeita expressamente a cláusula de arbitragem privada investidor-Estado (ISDS), substituindo litígios por mecanismos preventivos de diálogo e preservando a soberania tributária e regulatória do Estado.",
+    "ocorrencias": "Lista de Siglas; Cap. 5.4 (P2)."
+  },
+  {
+    "id": "arbitragem-pilar-2",
+    "termo": "Arbitragem do Pilar 2 da OCDE",
+    "sinonimos": [
+      "Arbitragem do Pilar 2 da OCDE",
+      "Arbitragem do Pilar 2",
+      "regras GloBE",
+      "imposto mínimo de 15%",
+      "Acordo do Pilar 2 da OCDE",
+      "manobra de contenção tributária"
+    ],
+    "significado": "Conjunto de regras do Marco Inclusivo da OCDE (2021) concebido para estabelecer um imposto mínimo corporativo global de 15%, mas que permitiu a institucionalização de brechas e subsídios que garantem a perpetuação da drenagem tributária da periferia (TJN).",
+    "ocorrencias": "Cap. 1 (P6); Cap. 3 (P2); Cap. 3.3 (Título, P1, P2, P3); Apêndice A (Mutação 3.6.1, Título, P1)."
+  },
+  {
+    "id": "substance-based-carve-outs-sbco",
+    "termo": "Exclusões de Substância (SBCO)",
+    "sinonimos": [
+      "Exclusões de Substância",
+      "SBCO",
+      "Substance-Based Carve-Outs",
+      "exclusões baseadas em substância",
+      "deduções de substância material",
+      "alívio contábil do Pilar 2"
+    ],
+    "significado": "Dispositivo das regras GloBE da OCDE (Artigo 5.3) que autoriza multinacionais a deduzirem da base de cálculo do imposto mínimo de 15% um percentual sobre o valor contábil dos ativos tangíveis e despesas com salários locais, viabilizando alíquotas efetivas inferiores a 15%.",
+    "ocorrencias": "Cap. 3.3 (P1); Apêndice A (Mutação 3.6.1, P1)."
+  },
+  {
+    "id": "creditos-reembolsaveis-qrtcs",
+    "termo": "Créditos Fiscais Reembolsáveis (QRTCs)",
+    "sinonimos": [
+      "Créditos Fiscais Reembolsáveis",
+      "QRTCs",
+      "Qualified Refundable Tax Credits",
+      "créditos fiscais reembolsáveis qualificados",
+      "guerra de subsídios estatais",
+      "subsídios fiscais sancionados"
+    ],
+    "significado": "Mecanismos de incentivo admitidos pelas regras do Pilar 2 nos quais jurisdições cobram formalmente o imposto corporativo de 15%, mas restituem expressiva parcela desses recursos à empresa sob a forma de subsídios orçamentários diretos ou créditos em dinheiro, convertendo a guerra fiscal de alíquotas em guerra de subsídios.",
+    "ocorrencias": "Cap. 3.3 (P2, P3); Apêndice A (Mutação 3.6.1, P1, P2)."
+  },
+  {
+    "id": "convencao-onu-78-230",
+    "termo": "Convenção-Quadro Tributária da ONU",
+    "sinonimos": [
+      "Convenção-Quadro Tributária da ONU",
+      "Convenção-Quadro da ONU",
+      "Resolução A/RES/78/230",
+      "convenção fiscal de caráter inclusivo",
+      "democratização tributária internacional",
+      "um país um voto"
+    ],
+    "significado": "Tratado multilateral universal em processo de estruturação no âmbito da Organização das Nações Unidas decorrente da aprovação da Resolução A/RES/78/230 da Assembleia Geral, que visa democratizar a governança fiscal global sob o princípio soberano de igualdade de votos entre nações.",
+    "ocorrencias": "Resumo (P1); Cap. 1 (P7); Cap. 5.2 (Título, P1, P2); Cap. 6 (P3)."
+  },
+  {
+    "id": "justica-alocativa",
+    "termo": "Justiça Alocativa",
+    "sinonimos": [
+      "Justiça Alocativa",
+      "Justiça alocativa",
+      "Allocative Justice",
+      "divisão justa dos direitos de tributação",
+      "direito originário de tributação na fonte",
+      "soberania alocativa"
+    ],
+    "significado": "Princípio normativo e de soberania fiscal que assegura o direito primário e inalienável dos países em desenvolvimento de tributarem o valor econômico onde a riqueza é fisicamente extraída, produzida pelo trabalho e consumida, superando o modelo tutelar de compensações externas (Okanga &amp; Brooks).",
+    "ocorrencias": "Cap. 2.3 (P2); Cap. 5.2 (P2); Cap. 6 (P3)."
+  },
+  {
+    "id": "eixo-elisao-teia-aranha",
+    "termo": "Eixo da Elisão e Teia de Aranha",
+    "sinonimos": [
+      "Eixo da Elisão e Teia de Aranha",
+      "Eixo central da elisão fiscal",
+      "Teia de Aranha britânica",
+      "segundo império britânico",
+      "rede extraterritorial do Reino Unido",
+      "complexo City-Offshores"
+    ],
+    "significado": "Estrutura territorial e financeira concêntrica na qual praças desenvolvidas operam como hospedeiras primárias da riqueza global desviada. O complexo britânico conecta a City de Londres a Dependências da Coroa e Territórios Ultramarinos, articulando-se a entrepostos como Holanda, Luxemburgo e Suíça (Shaxson; TJN).",
+    "ocorrencias": "Cap. 4.2 (P2); Apêndice A (Mecanismo 3, Título, P1, P2)."
+  },
+  {
+    "id": "centros-financeiros-offshore",
+    "termo": "Centros Financeiros Offshore (OFCs)",
+    "sinonimos": [
+      "Centros Financeiros Offshore",
+      "OFCs",
+      "Offshore Financial Centers",
+      "centros financeiros offshore",
+      "paraísos fiscais",
+      "jurisdições de sigilo financeiro",
+      "praças de alíquota zero"
+    ],
+    "significado": "Jurisdições estatais ou territórios insulares dependentes que desenham seus ordenamentos jurídicos especificamente para oferecer sigilo bancário absoluto, alíquotas nominais nulas sobre rendas externas e imunidade contra fiscalizações e execuções judiciais de terceiros países.",
+    "ocorrencias": "Cap. 1 (P1); Cap. 3.1 (P1); Cap. 4.2 (P2, P3); Apêndice A (Mecanismo 1, Mecanismo 3)."
+  },
+  {
+    "id": "elisao-vs-evasao",
+    "termo": "Elisão Fiscal vs. Evasão Fiscal",
+    "sinonimos": [
+      "Elisão Fiscal vs. Evasão Fiscal",
+      "Elisão fiscal",
+      "evasão fiscal",
+      "elisão e evasão fiscal",
+      "abuso da elisão",
+      "sonegação fiscal",
+      "planejamento tributário agressivo"
+    ],
+    "significado": "Distinção jurídica fundamental. A evasão fiscal é a conduta ilícita intencional de fraude, omissão dolosa ou falsificação de receitas. A elisão fiscal é o planejamento tributário que explora lacunas normativas e assimetrias de tratados para reduzir ou anular tributos formalmente dentro da lei, cujo abuso corporativo sistêmico constitui o objeto primordial da pesquisa.",
+    "ocorrencias": "Capa; Resumo; Cap. 1 (Nota 1, P3); Cap. 4.2 (P1); Apêndice A (Introdução)."
+  },
+  {
+    "id": "dupla-nao-tributacao",
+    "termo": "Dupla Não-Tributação",
+    "sinonimos": [
+      "Dupla Não-Tributação",
+      "Dupla não-tributação",
+      "double non-taxation",
+      "desoneração mútua",
+      "vácuo tributário transnacional",
+      "renda apátrida"
+    ],
+    "significado": "Fenômeno provocado por falhas deliberadas ou descasamentos de tratados internacionais e normas nacionais que resulta na ausência total de incidência do imposto sobre a renda corporativa em qualquer jurisdição estatal, tanto no país de origem quanto no país de destino.",
+    "ocorrencias": "Cap. 3.2 (P2); Apêndice A (Mecanismo 10, P1; Mecanismo 14, P2)."
+  }
+]

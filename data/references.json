@@ -1,65 +1,250 @@
-[
-  {
-    "id": "ref-amin",
-    "author": "AMIN, Samir",
-    "title": "A Lei do Valor Mundializada. In: O Desenvolvimento Desigual: Ensaio sobre as formações sociais do capitalismo periférico",
-    "year": "1976",
-    "publisher": "Forense-Universitária",
-    "link": null,
-    "type": "book"
-  },
-  {
-    "id": "ref-avi-yonah",
-    "author": "AVI-YONAH, Reuven S.",
-    "title": "Globalization, Tax Competition, and the Fiscal Crisis of the Welfare State",
-    "year": "2000",
-    "publisher": "Harvard Law Review, v. 113, n. 6",
-    "link": "https://repository.law.umich.edu/cgi/viewcontent.cgi?article=1049&context=articles",
-    "type": "article"
-  },
-  {
-    "id": "ref-harvey",
-    "author": "HARVEY, David",
-    "title": "O Novo Imperialismo",
-    "year": "2004",
-    "publisher": "Edições Loyola",
-    "link": null,
-    "type": "book"
-  },
-  {
-    "id": "ref-piketty",
-    "author": "PIKETTY, Thomas",
-    "title": "Capital e Ideologia",
-    "year": "2020",
-    "publisher": "Intrínseca",
-    "link": null,
-    "type": "book"
-  },
-  {
-    "id": "ref-tjn",
-    "author": "TAX JUSTICE NETWORK (TJN)",
-    "title": "The State of Tax Justice 2024",
-    "year": "2024",
-    "publisher": "Tax Justice Network",
-    "link": "https://taxjustice.net/reports/the-state-of-tax-justice-2024/",
-    "type": "report"
-  },
-  {
-    "id": "ref-ocde-2021",
-    "author": "OCDE",
-    "title": "Tax Challenges Arising from the Digitalisation of the Economy – Global Anti-Base Erosion (GloBE) Model Rules",
-    "year": "2021",
-    "publisher": "OECD Publishing",
-    "link": "https://www.oecd.org/tax/beps/tax-challenges-arising-from-the-digitalisation-of-the-economy-global-anti-base-erosion-globe-model-rules-pillar-two.htm",
-    "type": "report"
-  },
-  {
-    "id": "ref-onu-2023",
-    "author": "NAÇÕES UNIDAS (ONU)",
-    "title": "Resolução A/RES/78/230. Promotion of inclusive and effective international tax cooperation at the United Nations",
-    "year": "2023",
-    "publisher": "Assembleia Geral",
-    "link": "https://documents-dds-ny.un.org/doc/UNDOC/GEN/N23/432/38/PDF/N2343238.pdf",
-    "type": "resolution"
-  }
-]
+{
+    "ref-1": {
+        "author": "AMIN, Samir.",
+        "title": "A Lei do Valor Mundializada. In: O Desenvolvimento Desigual: Ensaio sobre as formações sociais do capitalismo periférico. Rio de Janeiro: Forense-Universitária, 1976.",
+        "link": "https://www.sahistory.org.za/sites/default/files/archive-files3/unequal_development_by_samir_amin.pdf",
+        "pdf": "pdfs/AMIN - Unequal Development (A Lei do Valor Mundializada) - ref01.pdf",
+        "resumo": "Formula a teoria da lei do valor mundializada e da troca desigual, demonstrando como o centro capitalista extrai estruturalmente o sobre-trabalho e os excedentes econômicos da periferia através da assimetria nas relações de troca internacionais e da subordinação financeira.",
+        "autor_info": "Samir Amin (1931–2018) foi um economista franco-egípcio pioneiro na formulação da Teoria do Sistema-Mundo e da Teoria da Dependência. Sua relevância na monografia reside em fornecer a âncora clássica do imperialismo econômico que explica por que a periferia permanece estruturalmente vulnerável à drenagem de riqueza."
+    },
+    "ref-2": {
+        "author": "AVI-YONAH, Reuven S.",
+        "title": "Globalization, Tax Competition, and the Fiscal Crisis of the Welfare State. Harvard Law Review, v. 113, n. 6, p. 1573-1676, 2000.",
+        "link": "https://repository.law.umich.edu/facarticles/50/",
+        "pdf": "pdfs/Globalization Tax Competition and the Fiscal Crisis of the Welf - ref02.pdf",
+        "resumo": "Desenvolve a tese seminal da crise fiscal do Estado de Bem-Estar: a desregulamentação e a hiper-mobilidade do capital retiram a capacidade soberana do Estado de tributar lucros e patrimônio no topo, desencadeando a 'corrida para o fundo' e forçando a transferência da carga tributária para o trabalho e o consumo da base.",
+        "autor_info": "Reuven S. Avi-Yonah é professor emérito de Direito Tributário na Universidade de Michigan (Harvard Law Review). É uma das maiores autoridades mundiais em direito tributário internacional. Sua relevância no trabalho é estabelecer a espinha dorsal teórica da impossibilidade matemática do Estado Social periférico sob competição tributária irrestrita."
+    },
+    "ref-3": {
+        "author": "DOM, Roel; MILLER, Mark.",
+        "title": "Reforming Tax Systems in the Developing World: What Can We Learn from the Past? Overseas Development Institute (ODI), 2018.",
+        "link": "https://media.odi.org/documents/12280.pdf",
+        "pdf": "pdfs/12280 - ref03.pdf",
+        "resumo": "Revisão histórica crítica que documenta as sucessivas ondas de reformas fiscais impostas pelo Norte Global aos países em desenvolvimento, demonstrando que as tentativas de 'modernização' administrativa falharam sistematicamente em recuperar as receitas tributárias perdidas após a liberalização comercial.",
+        "autor_info": "Pesquisadores seniores do Overseas Development Institute (ODI), centro de estudos de referência em desenvolvimento internacional no Reino Unido. Sua importância reside na demonstração empírica de que o receituário institucional exportado pelo Centro desmantelou a arrecadação aduaneira da periferia sem entregar substitutos sustentáveis."
+    },
+    "ref-4": {
+        "author": "EDWARDS, Chris; DE RUGY, Veronique.",
+        "title": "Economic Freedom of the World: 2002 Annual Report - Chapter 3: International Tax Competition. Vancouver: The Fraser Institute, 2002.",
+        "link": "https://www.fraserinstitute.org/sites/default/files/EconomicFreedomoftheWorld2002Ch3.pdf",
+        "pdf": "pdfs/EconomicFreedomoftheWorld2002Ch3 - ref04.pdf",
+        "resumo": "Apresenta a fundamentação teórica de viés liberal ortodoxo que defende a competição tributária internacional como uma virtude de mercado benéfica, argumentando que a ameaça de fuga de capitais impõe uma 'disciplina fiscal' necessária para conter gastos estatais e burocráticos.",
+        "autor_info": "Economistas do Cato Institute e do Fraser Institute / Mercatus Center (George Mason University). A relevância dessa obra na monografia é servir como contraponto teórico, permitindo desconstruir o sofisma da 'disciplina fiscal' quando aplicado a países periféricos desprovidos de infraestrutura básica."
+    },
+    "ref-5": {
+        "author": "HARVEY, David.",
+        "title": "O Novo Imperialismo. São Paulo: Edições Loyola, 2004.",
+        "link": "https://gpect.wordpress.com/wp-content/uploads/2013/11/david-harvey-o-novo-imperialismo.pdf",
+        "pdf": "pdfs/david-harvey-o-novo-imperialismo - ref05.pdf",
+        "resumo": "Formula o conceito contemporâneo de 'acumulação por espoliação', demonstrando que o capitalismo hegemônico contemporâneo não opera apenas pela exploração do trabalho formal, mas pela precarização sistemática, desapropriação de bens públicos, financeirização predatória e pilhagem institucionalizada dos recursos da periferia.",
+        "autor_info": "David Harvey é geógrafo e professor emérito na City University of New York (CUNY), sendo um dos pensadores marxistas vivos mais citados do mundo. É essencial na monografia para demonstrar que o Imperialismo Fiscal é a forma jurídica moderna da acumulação por espoliação."
+    },
+    "ref-6": {
+        "author": "ICIJ (International Consortium of Investigative Journalists).",
+        "title": "Cyprus Confidential (2023); Inside the IRS (2024); Panama Papers (2016). Washington, D.C.: ICIJ. Disponível em: relatórios e investigações oficiais.",
+        "link": "https://www.icij.org/investigations/",
+        "pdf": "web-only",
+        "resumo": "Série de megavazamentos e relatórios investigativos globais que expuseram a mecânica real dos escritórios de advocacia, bancos e paraísos fiscais, revelando a criação em massa de shell companies, holdings offshore e trusts utilizados por oligarcas e multinacionais para ocultar riqueza e sonegar tributos.",
+        "autor_info": "Rede internacional independente que reúne mais de 280 jornalistas de investigação em mais de 100 países. Relevância crucial no trabalho por trazer a evidência fática e documental incontestável que desmantelou o mito de conformidade legal dos paraísos fiscais."
+    },
+    "ref-7": {
+        "author": "KEEN, Michael; LOCKWOOD, Ben.",
+        "title": "The Value Added Tax: Its Causes and Consequences. Journal of Development Economics, v. 92, n. 2, p. 138-151, 2010.",
+        "link": "https://www.imf.org/external/pubs/ft/wp/2007/wp07183.pdf",
+        "pdf": "pdfs/KEEN_LOCKWOOD_2010 - ref07.pdf",
+        "resumo": "Estudo empírico econométrico que avalia o impacto da adoção do Imposto sobre o Valor Agregado (IVA) no mundo, comprovando que, enquanto nos países ricos da OCDE o IVA gerou arrecadação abundante, nos países em desenvolvimento ele falhou severamente em compensar a perda dos impostos de comércio exterior.",
+        "autor_info": "Michael Keen é ex-diretor assistente do Departamento Fiscal do Fundo Monetário Internacional (FMI); Ben Lockwood é professor de Economia na Universidade de Warwick. Sua autoridade técnica é indiscutível e fornece o respaldo matemático para provar o fracasso do modelo do IVA na periferia."
+    },
+    "ref-8": {
+        "author": "KHATTRY, Barsha; RAO, J. Mohan.",
+        "title": "Fiscal Faux Pas?: An Analysis of the Revenue Implications of Trade Liberalization. World Development, v. 30, n. 8, p. 1431-1444, 2002.",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0305750X02000438",
+        "pdf": "pdfs/1-s2.0-S0305750X02000438-main - ref08.pdf",
+        "resumo": "Demonstra quantitativamente que a abertura comercial compulsória das décadas de 1980 e 1990 provocou uma queda abrupta e permanente nas receitas alfandegárias das nações em desenvolvimento (o 'aperto fiscal' estrutural), sem que outras fontes de tributação interna conseguissem repor o montante subtraído.",
+        "autor_info": "Economistas especializados em economia do desenvolvimento e finanças públicas na Universidade de Massachusetts Amherst (UMass Amherst). Obra indispensável para comprovar o ponto histórico inicial do colapso da soberania orçamentária no Sul Global."
+    },
+    "ref-9": {
+        "author": "LENIN, V. I.",
+        "title": "Imperialismo, Fase Superior do Capitalismo. (Edição referencial clássica).",
+        "link": "https://www.marxists.org/archive/lenin/works/1916/imp-hsc/",
+        "pdf": "pdfs/imperialism - ref09.pdf",
+        "resumo": "Tratado teórico clássico que analisa a transição do capitalismo de livre concorrência para o capitalismo monopolista, definindo como traços essenciais a fusão do capital bancário com o industrial (capital financeiro), a preponderância da exportação de capitais sobre a de mercadorias e a partilha econômica do mundo.",
+        "autor_info": "Líder político e teórico marxista russo. Sua relevância na monografia é fornecer a genealogia conceitual que permite demonstrar que o Imperialismo Fiscal contemporâneo é o desdobramento sofisticado da dominação pelo capital financeiro internacional."
+    },
+    "ref-10": {
+        "author": "LUXEMBURGO, Rosa.",
+        "title": "A Acumulação do Capital. (Edição referencial clássica).",
+        "link": "https://www.marxists.org/archive/luxemburg/1913/accumulation-capital/",
+        "pdf": "pdfs/accumulation - ref10.pdf",
+        "resumo": "Obra basilar da economia política que demonstra que a acumulação capitalista nos países centrais não se sustenta de forma isolada, necessitando de uma relação parasitária contínua com formações econômicas não-capitalistas e com a periferia para realizar o valor excedente e extrair recursos materiais.",
+        "autor_info": "Rosa Luxemburgo (1871–1919) foi uma das economistas e filósofas revolucionárias mais influentes do século XX. Sua contribuição ancora a premissa de que a extração de riquezas da periferia pelo Centro não é acidental, mas condição vital de sobrevivência do sistema hegemônico."
+    },
+    "ref-11": {
+        "author": "NAÇÕES UNIDAS (ONU).",
+        "title": "Resolução A/RES/78/230. Promotion of inclusive and effective international tax cooperation at the United Nations. Assembleia Geral, 22 de Dezembro de 2023.",
+        "link": "https://digitallibrary.un.org/record/4032838?v=pdf",
+        "pdf": "pdfs/A_RES_78_230-EN - ref11.pdf",
+        "resumo": "Documento diplomático e jurídico histórico aprovado pela Assembleia Geral da ONU, estabelecendo formalmente a criação de uma Convenção-Quadro das Nações Unidas sobre Cooperação Tributária Internacional sob a regra democrática de 'um país, um voto', desafiando o monopólio centenário da OCDE.",
+        "autor_info": "Aprovação histórica liderada pelo Grupo Africano e pelo G77 + China nas Nações Unidas. É a prova documental máxima do Capítulo 5 sobre a resistência soberana da periferia contra a hegemonia da OCDE."
+    },
+    "ref-12": {
+        "author": "OCDE (Organização para a Cooperação e Desenvolvimento Econômico).",
+        "title": "50th Anniversary Challenges in Designing Competitive Tax Systems. Paris: OECD Publishing, 2011.",
+        "link": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2011/11/what-is-a-competitive-tax-system_g17a2044/5kg3h0vmd4kj-en.pdf",
+        "pdf": "pdfs/5kg3h0vmd4kj-en - ref12.pdf",
+        "resumo": "Relatório oficial da OCDE que promove abertamente a necessidade de os Estados nacionais desenharem sistemas tributários 'competitivos', justificando a desoneração corporativa do grande capital e legitimando institucionalmente a corrida predatória de incentivos fiscais.",
+        "autor_info": "Organização internacional intergovernamental sediada em Paris, apelidada de 'clube dos países ricos'. Sua presença na monografia funciona como prova confessional de que o Centro ativamente induziu a corrida para o fundo sob o manto técnico da eficiência."
+    },
+    "ref-13": {
+        "author": "OCDE.",
+        "title": "Constructing the Global Revenue Statistics Database, Technical Paper. Paris: OECD Publishing, Junho de 2018.",
+        "link": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/global-tax-revenues/constructing-the-global-revenue-statistics-database.pdf",
+        "pdf": "pdfs/constructing-the-global-revenue-statistics-database - ref13.pdf",
+        "resumo": "Manual metodológico que padroniza os critérios internacionais para classificação, consolidação e comparação de receitas públicas entre países desenvolvidos e em desenvolvimento, estabelecendo rigor e critérios de auditabilidade para séries temporais de arrecadação.",
+        "autor_info": "Divisão de Estatísticas Tributárias e Análise Econômica da OCDE. Fornece a blindagem metodológica para os cálculos e comparações de perda de arrecadação apresentados no Capítulo 4 da monografia."
+    },
+    "ref-14": {
+        "author": "OCDE.",
+        "title": "Tax Challenges Arising from the Digitalisation of the Economy – Global Anti-Base Erosion (GloBE) Model Rules (Pillar Two). Paris: OECD Publishing, 2021.",
+        "link": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/12/tax-challenges-arising-from-digitalisation-of-the-economy-global-anti-base-erosion-model-rules-pillar-two_eed81a23/782bac33-en.pdf",
+        "pdf": "pdfs/782bac33-en - ref14.pdf",
+        "resumo": "Estabelece as regras-modelo do Pilar 2 da OCDE para instituir uma alíquota mínima global de 15% sobre grandes multinacionais. Contudo, traz brechas estruturais (como a dedução por substância econômica e o tratamento favorecido de subsídios QRTC) que mantêm as assimetrias a favor dos países ricos.",
+        "autor_info": "Publicação do Inclusive Framework OCDE/G20. Serve na monografia para demonstrar a 'falsa reforma' e a mutação adaptativa da hegemonia do Centro para esvaziar as tentativas reais de taxação internacional."
+    },
+    "ref-15": {
+        "author": "OCDE.",
+        "title": "Tax Policy Studies, The Distributional Effects of Consumption Taxes in OECD Countries. Nº 22. Paris: OECD Publishing, 2014.",
+        "link": "https://doi.org/10.1787/9789264224520-en",
+        "pdf": "pdfs/9789264224520-en - ref15.pdf",
+        "resumo": "Estudo analítico e econométrico que comprova que a tributação sobre o consumo (impostos indiretos como IVA/ICMS) possui efeito fortemente regressivo em relação à renda disponível, onerando desproporcionalmente as famílias mais pobres em comparação aos estratos afluentes.",
+        "autor_info": "Divisão de Política Fiscal da OCDE. Sua importância é fornecer a prova técnica, emanada do próprio Centro, de que transferir o peso fiscal do capital para o consumo produz injustiça distributiva extrema."
+    },
+    "ref-16": {
+        "author": "OKANGA, Okanga Ogbu; BROOKS, Kim.",
+        "title": "Allocative Justice as a Constraint on Fiscal Imperialism in International Tax. Osgoode Hall Law Journal, 2025.",
+        "link": "https://digitalcommons.osgoode.yorku.ca/ohlj/",
+        "pdf": "pdfs/Allocative Justice as a Constraint on Fiscal Imperialism in Inter - ref16.pdf",
+        "resumo": "Artigo de alto impacto que consagra e valida o conceito de 'Imperialismo Fiscal' no direito tributário internacional. Diferencia 'justiça redistributiva' (caridade ou ajuda externa) de 'justiça alocativa' (o direito soberano inegociável da periferia de tributar a riqueza onde ela é materialmente gerada).",
+        "autor_info": "Okanga Ogbu Okanga é professor na Dalhousie University e pesquisador sênior; Kim Brooks é reitora e professora na Schulich School of Law (Canadá). Obra fulcral que confere autoridade acadêmica de ponta ao título e ao argumento central da monografia."
+    },
+    "ref-17": {
+        "author": "ORTIZ-OSPINA, Esteban; ROSER, Max.",
+        "title": "Public Spending. Our World in Data, 2016 (com atualizações).",
+        "link": "https://ourworldindata.org/public-spending",
+        "pdf": "web-only",
+        "resumo": "Compilação de séries temporais históricas globais sobre os níveis de gastos públicos em educação, saúde e infraestrutura ao longo dos séculos XIX, XX e XXI, evidenciando a profunda correlação entre a capacidade de arrecadação fiscal e os índices de bem-estar social.",
+        "autor_info": "Pesquisadores da Oxford Martin School na Universidade de Oxford e fundadores do Our World in Data. Fornece os benchmarks estatísticos para comparar a carência de investimentos básicos na periferia versus o Centro."
+    },
+    "ref-18": {
+        "author": "OXFAM.",
+        "title": "Takers Not Makers: The unjust poverty and unearned wealth of colonial inheritance. Oxfam International, Jan. 2025.",
+        "link": "https://www.oxfam.org/en/research/takers-not-makers",
+        "pdf": "pdfs/English - Davos Full Report 2025 - ref18.pdf",
+        "resumo": "Relatório lançado no Fórum de Davos estabelecendo a conexão empírica direta entre a desigualdade contemporânea e a herança do colonialismo histórico, demonstrando como o sistema tributário internacional opera como instrumento de extração contínua de recursos do Sul Global.",
+        "autor_info": "Confederação internacional independente de combate à pobreza e à desigualdade extrema com presença em mais de 90 países. Dá sustentação social e fática ao argumento de que o imperialismo fiscal preserva os canais coloniais de extração de valor."
+    },
+    "ref-19": {
+        "author": "PETER, K. S.; BUTTRICK, S.; DUNCAN, D.",
+        "title": "Global Reform of Personal Income Taxation, 1981-2005: Evidence from 189 Countries. National Tax Journal, v. 63, n. 3, p. 447-478, 2010.",
+        "link": "https://www.journals.uchicago.edu/doi/10.17310/ntj.2010.3.03",
+        "pdf": "pdfs/PETER_BUTTRICK_DUNCAN_2010 - ref19.pdf",
+        "resumo": "Análise quantitativa abrangente em 189 países durante 25 anos, comprovando matematicamente a queda generalizada e sincronizada nas alíquotas máximas de imposto de renda sobre corporações e super-ricos como resultado da competição tributária desregulada.",
+        "autor_info": "Professores e economistas do Departamento de Economia da Georgia State University (National Tax Journal). Fornece a comprovação empírica definitiva de que a corrida para o fundo foi um fenômeno planetário."
+    },
+    "ref-20": {
+        "author": "PIKETTY, Thomas.",
+        "title": "Capital e Ideologia. Rio de Janeiro: Intrínseca, 2020.",
+        "link": "https://horizon.documentation.ird.fr/exl-doc/pleins_textes/2021-03/010081290.pdf",
+        "pdf": "web-only",
+        "resumo": "Investiga a história dos regimes de desigualdade através dos séculos, demonstrando que a concentração de riqueza e as assimetrias tributárias não decorrem de leis econômicas naturais ou de mérito, mas de construções ideológicas e políticas criadas pelas elites dominantes para legitimar a extração de recursos.",
+        "autor_info": "Professor da Paris School of Economics e da EHESS, autor do best-seller mundial 'O Capital no Século XXI'. Essencial no Capítulo 2 para demonstrar como o discurso da 'atratividade de investimentos' opera como ideologia de legitimação do imperialismo fiscal."
+    },
+    "ref-21": {
+        "author": "RAWLS, John.",
+        "title": "Uma Teoria da Justiça. São Paulo: Martins Fontes, 1997.",
+        "link": "https://edisciplinas.usp.br/pluginfile.php/4126932/mod_resource/content/1/John_Rawls_Uma_Teoria_da_Justica.pdf",
+        "pdf": "web-only",
+        "resumo": "Clássico da filosofia política contemporânea que estabelece os princípios da justiça como equidade e o 'princípio da diferença', segundo o qual desigualdades econômicas e sociais só são eticamente toleráveis se resultarem no maior benefício possível para os membros menos favorecidos da sociedade.",
+        "autor_info": "John Rawls (1921–2002) foi professor emérito de Filosofia em Harvard, considerado o maior filósofo político liberal do século XX. Sua inclusão ancora a crítica ética e moral ao sistema fiscal internacional, que faz o oposto de seus princípios ao onerar os mais pobres."
+    },
+    "ref-22": {
+        "author": "TAX JUSTICE NETWORK (TJN).",
+        "title": "The State of Tax Justice 2024. Tax Justice Network, Nov. 2024.",
+        "link": "https://taxjustice.net/reports/the-state-of-tax-justice-2024/",
+        "pdf": "pdfs/State-of-Tax-Justice-2024-Portuguese-Tax-Justice-Network - ref22.pdf",
+        "resumo": "Relatório global de referência que calcula a perda anual de US$ 492 bilhões para as finanças públicas mundiais em decorrência do abuso tributário corporativo e da sonegação individual offshore, identificando os países ricos da OCDE como responsáveis diretos por quase 80% dessa facilitação.",
+        "autor_info": "Rede independente internacional de pesquisadores e analistas fiscais, pioneira mundial no cálculo da elisão internacional e do Índice de Sigilo Financeiro. É a principal fonte de dados quantitativos macroeconômicos de toda a monografia."
+    },
+    "ref-23": {
+        "author": "UNCTAD (Conferência das Nações Unidas sobre Comércio e Desenvolvimento).",
+        "title": "World Investment Report 2015: Reforming International Investment Governance. Genebra: Nações Unidas, 2015.",
+        "link": "https://unctad.org/system/files/official-document/wir2015_en.pdf",
+        "pdf": "pdfs/wir2015_en - ref23.pdf",
+        "resumo": "Analisa o impacto das holdings e empresas de fachada (Special Purpose Entities - SPEs) nos fluxos globais de investimento, estimando perdas de US$ 100 bilhões anuais para países em desenvolvimento e criticando o sistema de arbitragem privada investidor-Estado (ISDS) como ameaça à soberania.",
+        "autor_info": "Órgão permanente da Assembleia Geral da ONU para comércio e desenvolvimento internacional. Fornece o respaldo institucional multilateral para denunciar as brechas corporativas e o imperialismo dos tratados bilaterais de investimento."
+    },
+    "ref-24": {
+        "author": "YU, B.; MAGALHAES, E.; BENIN, S.",
+        "title": "A Database User Manual for SPEED, Statistics on Public Expenditures for Economic Development. Washington, D.C.: IFPRI, 2015.",
+        "link": "https://ebrary.ifpri.org/utils/getfile/collection/p15738coll2/id/129759/filename/129970.pdf",
+        "pdf": "pdfs/YU_MAGALHAES_BENIN_2015 - ref24.pdf",
+        "resumo": "Manual metodológico da base SPEED que define objetivamente os gastos públicos direcionados ao desenvolvimento socioeconômico (Saúde, Educação, Infraestrutura, Agricultura e Seguridade), servindo de métrica para converter as perdas de elisão fiscal em custo social concreto.",
+        "autor_info": "Pesquisadores seniores do International Food Policy Research Institute (IFPRI) em Washington. Metodologia crucial para a análise prática do custo de oportunidade do Brasil e da Nigéria no Capítulo 4."
+    },
+    "ref-25": {
+        "author": "ZHANG, Alex.",
+        "title": "The Origins of U.S. Territorial Taxation and the Insular Cases. The Yale Law Journal, v. 134, 2025.",
+        "link": "https://www.yalelawjournal.org/forum/the-origins-of-us-territorial-taxation-and-the-insular-cases",
+        "pdf": "pdfs/ZhangYLJForumEssay_id98771d - ref25.pdf",
+        "resumo": "Pesquisa jurídica genealógica demonstrando como o modelo tributário territorial dos Estados Unidos foi explicitamente concebido no início do século XX (nos Casos Insulares da Suprema Corte) para permitir a extração econômica e a subordinação de colônias e territórios ultramarinos sob a égide imperial.",
+        "autor_info": "Professor de Direito na Yale Law School (The Yale Law Journal). Confere validação científica recente à tese de que os alicerces do direito tributário internacional nasceram historicamente como ferramentas de expansão e controle imperialista."
+    },
+    "ref-26": {
+        "author": "AUERBACH, Alan J.; HASSETT, Kevin.",
+        "title": "Capital Taxation in the Twenty-First Century. National Bureau of Economic Research (NBER Working Paper Series, n. 20871), 2015.",
+        "link": "https://www.nber.org/papers/w20871",
+        "pdf": "pdfs/AUERBACH & HASSETT (2015) - Capital Taxation in the Twenty-First Century.pdf",
+        "resumo": "Analisa o modelo de tributação do capital e suas repercussões macroeconômicas na acumulação de riqueza e nas distorções de investimento internacional, demonstrando os desequilíbrios entre o retorno do capital e a capacidade redistributiva dos sistemas tributários.",
+        "autor_info": "Alan J. Auerbach é professor de Economia e Direito em UC Berkeley e ex-vice-presidente da American Economic Association; Kevin Hassett foi presidente do Conselho de Assessores Econômicos da Casa Branca. Dá sustentação teórica e metodológica rigorosa sobre tributação de capital aos Mecanismos do Apêndice A."
+    },
+    "ref-27": {
+        "author": "DAMGAARD, J.; ELKJAER, T.; JOHANNESEN, N.",
+        "title": "What Is Real and What Is Not in Global FDI? International Monetary Fund (IMF Working Paper WP/19/187) / Journal of International Money and Finance, 2019/2024.",
+        "link": "https://nielsjohannesen.net/wp-content/uploads/DEJ2024-JIMF-phantom-fdi.pdf",
+        "pdf": "pdfs/DAMGAARD, ELKJAER & JOHANNESEN (2019) - What Is Real and What Is Not in Global FDI.pdf",
+        "resumo": "Estudo primário do Fundo Monetário Internacional (FMI) que revelou que quase 40% do Investimento Estrangeiro Direto (IED) global é 'fantasma' (Phantom FDI) – fluxos financeiros que passam por caixas de correio e empresas de fachada em paraísos fiscais sem qualquer substância econômica ou produtiva.",
+        "autor_info": "Jannick Damgaard e Thomas Elkjaer são economistas seniores do FMI; Niels Johannesen é professor na Universidade de Copenhague e diretor do Centro de Riqueza Global de Oxford. É a autoridade máxima mundial que ancora tecnicamente o Mecanismo 17 (IED Fantasma)."
+    },
+    "ref-28": {
+        "author": "GENSCHEL, P.; SCHWARZ, P.",
+        "title": "Tax competition: a literature review. Socio-Economic Review, v. 9, n. 2, p. 339–370, 2011.",
+        "link": "https://doi.org/10.1093/ser/mwr004",
+        "pdf": "pdfs/GENSCHEL & SCHWARZ (2011) - Tax Competition - A Literature Review.pdf",
+        "resumo": "Revisão bibliográfica abrangente que cataloga e sistematiza os modelos teóricos e as evidências empíricas sobre competição fiscal, detalhando como o desarmamento fiscal dos Estados e a guerra entre jurisdições limitam o financiamento de serviços públicos e comprimem as políticas sociais.",
+        "autor_info": "Philipp Genschel é professor de Ciência Política no European University Institute (EUI, Florença); Peter Schwarz é pesquisador na Universidade de Bremen. Proporciona sustentação teórica indispensável para o bloco da 'Guerra Fiscal' e para os Mecanismos 19, 20 e 21."
+    },
+    "ref-29": {
+        "author": "OCDE (Organização para a Cooperação e Desenvolvimento Econômico).",
+        "title": "Measuring and Monitoring BEPS, Action 11 - 2015 Final Report. OECD/G20 Base Erosion and Profit Shifting Project. Paris: OECD Publishing, 2015.",
+        "link": "https://doi.org/10.1787/9789264241343-en",
+        "pdf": "pdfs/OCDE (2015) - Measuring and Monitoring BEPS, Action 11 - 2015 Final Report.pdf",
+        "resumo": "Relatório final da Ação 11 do projeto BEPS que estimou perdas anuais globais entre US$ 100 e 240 bilhões (4% a 10% da arrecadação de imposto de renda corporativo mundial) decorrentes de manipulação de preços de transferência e elisão, instituindo o painel oficial de 6 indicadores de monitoramento.",
+        "autor_info": "Publicação oficial conjunta da OCDE e das economias do G20. Serve na monografia como a comprovação numérica incontestável emitida pelo próprio Centro sobre o volume astronômico de lucros transferidos artificialmente."
+    },
+    "ref-30": {
+        "author": "SHAXSON, Nicholas.",
+        "title": "As Ilhas do Tesouro: Os paraísos fiscais e os homens que roubaram o mundo. São Paulo: Companhia das Letras, 2012 / Treasure Islands, Bodley Head, 2011.",
+        "link": "https://archive.org/details/treasureislandst00shax_0",
+        "pdf": "pdfs/SHAXSON (2012) - As Ilhas do Tesouro (Treasure Islands).pdf",
+        "resumo": "Investigação detalhada que desvenda a geografia política dos paraísos fiscais, destacando o papel central da 'Rede de Aranha' da City de Londres e seus territórios ultramarinos e dependências da Coroa (Cayman, Jersey, Bermudas) como maquinário institucional de opacidade financeira.",
+        "autor_info": "Nicholas Shaxson é escritor e jornalista investigativo britânico, membro da Tax Justice Network. É a referência central citada na monografia para ancorar a geografia dos centros offshore, a opacidade bancária e o Mecanismo 3 e 16."
+    },
+    "ref-31": {
+        "author": "ZUCMAN, Gabriel.",
+        "title": "A Riqueza Oculta das Nações: A praga dos paraísos fiscais. São Paulo: Editora Contracorrente, 2016 / The Hidden Wealth of Nations, University of Chicago Press, 2015.",
+        "link": "http://gabriel-zucman.eu/hidden-wealth/",
+        "pdf": "pdfs/ZUCMAN (2016) - A Riqueza Oculta das Nacoes (The Hidden Wealth of Nations).pdf",
+        "resumo": "Quantifica que cerca de 8% da riqueza financeira global das famílias (mais de US$ 7,6 trilhões) está oculta em centros offshore, analisa as manobras contábeis de desvio de lucros corporativos e propõe a instituição de um cadastro financeiro global transparente e sanções a jurisdições opacas.",
+        "autor_info": "Gabriel Zucman é professor de Economia na Universidade de Paris e em UC Berkeley, diretor do EU Tax Observatory e colaborador próximo de Thomas Piketty. É a principal autoridade empírica global citada nos Mecanismos 4 e 13 para fundamentar o desvio de lucros e a sonegação offshore."
+    }
+}

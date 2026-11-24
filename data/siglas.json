@@ -1,0 +1,509 @@
+[
+  {
+    "id": "ACFI",
+    "sigla": "ACFI / ACFIs",
+    "termo": "Acordo de Cooperação e Facilitação de Investimentos ( Cooperative and Facilitation Investment Agreement )",
+    "eixo": "Tratados e Arbitragem",
+    "aplicacao": "Modelo brasileiro de tratados bilaterais que substitui a arbitragem privada investidor-Estado (ISDS) pela prevenção institucional de litígios e arbitragem Estado-Estado.",
+    "aliases": [
+      "ACFI",
+      "ACFIs"
+    ]
+  },
+  {
+    "id": "BEPS",
+    "sigla": "BEPS",
+    "termo": "Base Erosion and Profit Shifting  (Erosão da Base Tributável e Transferência de Lucros)",
+    "eixo": "Regulação Internacional",
+    "aplicacao": "Plano de ação lançado em 2013 pela OCDE/G20 com 15 ações para conter a elisão fiscal de empresas multinacionais.",
+    "aliases": [
+      "BEPS"
+    ]
+  },
+  {
+    "id": "BIT",
+    "sigla": "BIT / BITs",
+    "termo": "Bilateral Investment Treaty  (Tratado Bilateral de Investimento - ver TBI)",
+    "eixo": "Tratados Internacionais",
+    "aplicacao": "Denominação internacional em inglês dos acordos bilaterais de investimento comumente dotados de cláusulas arbitrais ISDS.",
+    "aliases": [
+      "BIT",
+      "BITs"
+    ]
+  },
+  {
+    "id": "CbCR",
+    "sigla": "CbCR",
+    "termo": "Country-by-Country Reporting  (Relatório País a País)",
+    "eixo": "Transparência Tributária",
+    "aplicacao": "Instrumento introduzido pela Ação 13 do Projeto BEPS e utilizado pela Tax Justice Network para mensurar o desalinhamento geográfico de lucros corporativos.",
+    "aliases": [
+      "CbCR"
+    ]
+  },
+  {
+    "id": "CRS",
+    "sigla": "CRS",
+    "termo": "Common Reporting Standard  (Norma Comum de Comunicação de Informações / Padrão Comum de Relato)",
+    "eixo": "Transparência e Cooperação",
+    "aplicacao": "Sistema multilateral da OCDE para a troca automática de informações financeiras e bancárias entre administrações tributárias.",
+    "aliases": [
+      "CRS"
+    ]
+  },
+  {
+    "id": "D",
+    "sigla": "D/NI",
+    "termo": "Deduction / No Inclusion  (Dedução com Não-Inclusão de Renda)",
+    "eixo": "Engenharia Contábil",
+    "aplicacao": "Efeito estrutural dos arranjos híbridos (Mecanismo 10), no qual uma mesma despesa é deduzida na subsidiária devedora sem ser tributada como renda na matriz credora.",
+    "aliases": [
+      "D",
+      "NI"
+    ]
+  },
+  {
+    "id": "DTT",
+    "sigla": "DTT / DTTs",
+    "termo": "Double Taxation Treaty  (Tratado de Dupla Tributação - ver TDT)",
+    "eixo": "Tratados Internacionais",
+    "aplicacao": "Designação internacional em língua inglesa dos acordos celebrados para atenuar ou eliminar a bitributação da renda transfronteiriça.",
+    "aliases": [
+      "DTT",
+      "DTTs"
+    ]
+  },
+  {
+    "id": "ETR",
+    "sigla": "ETR",
+    "termo": "Effective Tax Rate  (Alíquota Efetiva de Imposto)",
+    "eixo": "Finanças Corporativas",
+    "aplicacao": "Indicador que mede a carga real de tributos recolhida sobre o lucro contábil apurado, confrontado com a alíquota nominal corporativa para detectar arbitragens fiscais.",
+    "aliases": [
+      "ETR"
+    ]
+  },
+  {
+    "id": "EUA",
+    "sigla": "EUA",
+    "termo": "Estados Unidos da América ( United States of America )",
+    "eixo": "Geopolítica Global",
+    "aplicacao": "Potência hegemônica central na formulação das regras financeiras globais e líder do bloco de oposição à Convenção Fiscal da ONU.",
+    "aliases": [
+      "EUA"
+    ]
+  },
+  {
+    "id": "FDI",
+    "sigla": "FDI",
+    "termo": "Foreign Direct Investment  (Investimento Estrangeiro Direto - ver IED)",
+    "eixo": "Economia Internacional",
+    "aplicacao": "Fluxos e estoques de investimentos transfronteiriços em ativos produtivos ou em participações societárias de controle.",
+    "aliases": [
+      "FDI"
+    ]
+  },
+  {
+    "id": "FMI",
+    "sigla": "FMI",
+    "termo": "Fundo Monetário Internacional ( International Monetary Fund )",
+    "eixo": "Organismos Multilaterais",
+    "aplicacao": "Instituição de Bretton Woods examinada na literatura como indutora da abertura tarifária desregulada e da exportação do modelo de IVA para países periféricos.",
+    "aliases": [
+      "FMI"
+    ]
+  },
+  {
+    "id": "G77",
+    "sigla": "G77 / G-77",
+    "termo": "Grupo dos 77 ( Group of 77 )",
+    "eixo": "Geopolítica Global",
+    "aplicacao": "Histórica coligação de países em desenvolvimento e periféricos no âmbito da ONU, articuladora da votação da Resolução A/RES/78/230.",
+    "aliases": [
+      "G77",
+      "G-77",
+      "G 77"
+    ]
+  },
+  {
+    "id": "GDP",
+    "sigla": "GDP",
+    "termo": "Gross Domestic Product  (Produto Interno Bruto - ver PIB)",
+    "eixo": "Macroeconomia",
+    "aplicacao": "Expressão internacional para a métrica de produto e renda agregada de uma jurisdição nacional.",
+    "aliases": [
+      "GDP"
+    ]
+  },
+  {
+    "id": "GloBE",
+    "sigla": "GloBE",
+    "termo": "Global Anti-Base Erosion  (Regras Globais contra a Erosão da Base Tributária)",
+    "eixo": "Regulação Internacional",
+    "aplicacao": "Conjunto de regras operacionais de modelo (Pilar 2 da OCDE) desenhadas para implementar o imposto mínimo global de 15% sobre grandes corporações.",
+    "aliases": [
+      "GloBE"
+    ]
+  },
+  {
+    "id": "IA",
+    "sigla": "IA",
+    "termo": "Inteligência Artificial ( Artificial Intelligence )",
+    "eixo": "Economia Digital",
+    "aplicacao": "Vetor tecnológico e algorítmico da hiper-digitalização contemporânea que potencializa a desmaterialização de ativos e a transferência automatizada de dados e receitas.",
+    "aliases": [
+      "IA"
+    ]
+  },
+  {
+    "id": "ICIJ",
+    "sigla": "ICIJ",
+    "termo": "International Consortium of Investigative Journalists  (Consórcio Internacional de Jornalistas de Investigação)",
+    "eixo": "Transparência e Pesquisa",
+    "aplicacao": "Rede global de jornalismo investigativo responsável pelos vazamentos empíricos do sistema offshore ( Panama Papers ,  Paradise Papers ,  Pandora Papers ).",
+    "aliases": [
+      "ICIJ"
+    ]
+  },
+  {
+    "id": "ICMS",
+    "sigla": "ICMS",
+    "termo": "Imposto sobre Circulação de Mercadorias e Serviços",
+    "eixo": "Finanças Públicas",
+    "aplicacao": "Principal tributo estadual brasileiro sobre o consumo, examinado no trabalho como exemplo emblemático da guerra fiscal federativa interna no Brasil.",
+    "aliases": [
+      "ICMS"
+    ]
+  },
+  {
+    "id": "IED",
+    "sigla": "IED",
+    "termo": "Investimento Estrangeiro Direto ( Foreign Direct Investment )",
+    "eixo": "Economia Internacional",
+    "aplicacao": "Categoria macroeconômica que mede a alocação de capital externo no país, diferenciada criticamente do investimento fantasma ( Phantom FDI ).",
+    "aliases": [
+      "IED"
+    ]
+  },
+  {
+    "id": "IFPRI",
+    "sigla": "IFPRI",
+    "termo": "International Food Policy Research Institute",
+    "eixo": "Bases Empíricas",
+    "aplicacao": "Instituto internacional responsável pela elaboração e manutenção do banco de dados funcional SPEED ( Statistics on Public Expenditures for Economic Development ).",
+    "aliases": [
+      "IFPRI"
+    ]
+  },
+  {
+    "id": "IIR",
+    "sigla": "IIR",
+    "termo": "Income Inclusion Rule  (Regra de Inclusão de Renda)",
+    "eixo": "Regulação Internacional",
+    "aplicacao": "Pilar operacional primário das regras GloBE (Pilar 2), que autoriza a jurisdição da matriz controladora a cobrar imposto complementar quando a filial recolhe abaixo de 15%.",
+    "aliases": [
+      "IIR"
+    ]
+  },
+  {
+    "id": "IR",
+    "sigla": "IR / IRPJ",
+    "termo": "Imposto de Renda / Imposto de Renda das Pessoas Jurídicas",
+    "eixo": "Finanças Públicas",
+    "aplicacao": "Tributo direto incidente sobre a renda corporativa e individual; foco da corrida para o fundo promovida pela mobilidade do capital.",
+    "aliases": [
+      "IR",
+      "IRPJ"
+    ]
+  },
+  {
+    "id": "ISDS",
+    "sigla": "ISDS",
+    "termo": "Investor-State Dispute Settlement  (Resolução de Litígios entre Investidor e Estado)",
+    "eixo": "Tratados e Arbitragem",
+    "aplicacao": "Cláusula arbitral em tratados bilaterais de investimento que permite a corporações multinacionais processar Estados nacionais em tribunais privados internacionais.",
+    "aliases": [
+      "ISDS"
+    ]
+  },
+  {
+    "id": "IVA",
+    "sigla": "IVA",
+    "termo": "Imposto sobre o Valor Acrescentado ou Agregado ( Value Added Tax  / VAT)",
+    "eixo": "Finanças Públicas",
+    "aplicacao": "Tributo indireto incidente sobre as etapas de circulação de bens e serviços; demonstrado econometricamente por Keen e Lockwood como falho e regressivo na periferia.",
+    "aliases": [
+      "IVA"
+    ]
+  },
+  {
+    "id": "MNE",
+    "sigla": "MNE / MNEs",
+    "termo": "Multinational Enterprise  (Empresa Multinacional / Corporação Transnacional)",
+    "eixo": "Economia Industrial",
+    "aplicacao": "Grupo empresarial transnacional composto por matriz e subsidiárias operando em múltiplas jurisdições soberanas.",
+    "aliases": [
+      "MNE",
+      "MNEs"
+    ]
+  },
+  {
+    "id": "OCDE",
+    "sigla": "OCDE / OECD",
+    "termo": "Organização para a Cooperação e Desenvolvimento Econômico ( Organisation for Economic Co-operation and Development )",
+    "eixo": "Organismos Multilaterais",
+    "aplicacao": "Entidade hegemônica multilateral dos países ricos exportadores de capital, historicamente responsável pelo desenho das regras de preços de transferência e tratados.",
+    "aliases": [
+      "OCDE",
+      "OECD"
+    ]
+  },
+  {
+    "id": "OFC",
+    "sigla": "OFC / OFCs",
+    "termo": "Offshore Financial Center  (Centro Financeiro  Offshore )",
+    "eixo": "Finanças Offshore",
+    "aplicacao": "Jurisdições e praças financeiras dotadas de regulação bancária opaca, sigilo societário estrito e tributação favorecida ou nula sobre rendas não residentes.",
+    "aliases": [
+      "OFC",
+      "OFCs"
+    ]
+  },
+  {
+    "id": "OMC",
+    "sigla": "OMC",
+    "termo": "Organização Mundial do Comércio ( World Trade Organization )",
+    "eixo": "Organismos Multilaterais",
+    "aplicacao": "Organismo multilateral regulador do comércio global; indutor da desmontagem de barreiras alfandegárias na periferia sem a correspondente contrapartida fiscal.",
+    "aliases": [
+      "OMC"
+    ]
+  },
+  {
+    "id": "ONG",
+    "sigla": "ONG / ONGs",
+    "termo": "Organização Não Governamental",
+    "eixo": "Sociedade Civil",
+    "aplicacao": "Entidades civis sem fins lucrativos (como Oxfam e Tax Justice Network) ativas na produção de relatórios técnicos e na denúncia da espoliação tributária transnacional.",
+    "aliases": [
+      "ONG",
+      "ONGs"
+    ]
+  },
+  {
+    "id": "ONU",
+    "sigla": "ONU",
+    "termo": "Organização das Nações Unidas ( United Nations )",
+    "eixo": "Organismos Multilaterais",
+    "aplicacao": "Foro multilateral universal regido pelo princípio \"um país, um voto\", onde a periferia aprovou o mandato para a Convenção-Quadro Tributária Internacional.",
+    "aliases": [
+      "ONU"
+    ]
+  },
+  {
+    "id": "Phantom_FDI",
+    "sigla": "Phantom FDI",
+    "termo": "Phantom Foreign Direct Investment  (Investimento Estrangeiro Direto Fantasma / Fictício)",
+    "eixo": "Finanças Offshore",
+    "aplicacao": "Recursos contabilizados formalmente como IED que circulam em veículos vazios sem lastro produtivo, infraestrutura ou criação de postos de trabalho.",
+    "aliases": [
+      "Phantom FDI"
+    ]
+  },
+  {
+    "id": "PIB",
+    "sigla": "PIB",
+    "termo": "Produto Interno Bruto ( Gross Domestic Product  - GDP)",
+    "eixo": "Macroeconomia",
+    "aplicacao": "Soma de todos os bens e serviços finais produzidos em um país; utilizado nas métricas de carga tributária ( Tax-to-GDP ) e nas perdas fiscais relativas.",
+    "aliases": [
+      "PIB"
+    ]
+  },
+  {
+    "id": "QRTC",
+    "sigla": "QRTC / QRTCs",
+    "termo": "Qualified Refundable Tax Credits  (Créditos Fiscais Reembolsáveis Qualificados)",
+    "eixo": "Mutação da Elisão",
+    "aplicacao": "Instrumento contábil validado pelas regras GloBE (Pilar 2) que permite aos centros financeiros devolver impostos arrecadados em forma de subsídios estatais diretos.",
+    "aliases": [
+      "QRTC",
+      "QRTCs"
+    ]
+  },
+  {
+    "id": "SBCO",
+    "sigla": "SBCO",
+    "termo": "Substance-Based Carve-Out  (Exclusão de Renda Baseada em Substância Econômica)",
+    "eixo": "Mutação da Elisão",
+    "aplicacao": "Brecha estruturada no Artigo 5.3 das regras GloBE da OCDE que permite deduzir do imposto mínimo uma porcentagem do valor contábil de ativos físicos e da folha salarial.",
+    "aliases": [
+      "SBCO"
+    ]
+  },
+  {
+    "id": "SEZ",
+    "sigla": "SEZ / SEZs",
+    "termo": "Special Economic Zone  (Zona Econômica Especial - ver ZEE)",
+    "eixo": "Regimes Especiais",
+    "aplicacao": "Termo em inglês para enclaves territoriais desregulamentados voltados à montagem industrial e exportação com isenção fiscal.",
+    "aliases": [
+      "SEZ",
+      "SEZs"
+    ]
+  },
+  {
+    "id": "SPE",
+    "sigla": "SPE / SPEs",
+    "termo": "Special Purpose Entity  (Entidade de Propósito Específico / Veículo de Propósito Especial)",
+    "eixo": "Estruturas Societárias",
+    "aplicacao": "Empresas de fachada e entidades instrumentais sem funcionários ou atividade produtiva, criadas para canalizar investimentos e isolar riscos fiscais ( conduit ).",
+    "aliases": [
+      "SPE",
+      "SPEs"
+    ]
+  },
+  {
+    "id": "SPEED",
+    "sigla": "SPEED",
+    "termo": "Statistics on Public Expenditures for Economic Development",
+    "eixo": "Bases Empíricas",
+    "aplicacao": "Base de dados funcional mantida pelo IFPRI que quantifica e classifica os gastos públicos setoriais (Saúde, Educação, Infraestrutura) ao longo de séries históricas.",
+    "aliases": [
+      "SPEED"
+    ]
+  },
+  {
+    "id": "SUS",
+    "sigla": "SUS",
+    "termo": "Sistema Único de Saúde",
+    "eixo": "Políticas Públicas",
+    "aplicacao": "Sistema público de saúde universal do Brasil, utilizado no trabalho como parâmetro empírico para demonstrar o custo de oportunidade orçamentário da sangria fiscal.",
+    "aliases": [
+      "SUS"
+    ]
+  },
+  {
+    "id": "TBI",
+    "sigla": "TBI / TBIs",
+    "termo": "Tratado Bilateral de Investimento ( Bilateral Investment Treaty  - BIT)",
+    "eixo": "Tratados e Arbitragem",
+    "aplicacao": "Acordos internacionais entre dois Estados soberanos destinados a proteger o investimento estrangeiro recíproco, historicamente associados a cláusulas ISDS.",
+    "aliases": [
+      "TBI",
+      "TBIs"
+    ]
+  },
+  {
+    "id": "TDT",
+    "sigla": "TDT / TDTs",
+    "termo": "Tratado de Dupla Tributação / Acordo de Bitributação ( Double Taxation Treaty  - DTT)",
+    "eixo": "Tratados e Arbitragem",
+    "aplicacao": "Acordos internacionais bilaterais para evitar a sobreposição de tributos sobre a mesma renda, explorados sistematicamente para fins de  treaty shopping .",
+    "aliases": [
+      "TDT",
+      "TDTs"
+    ]
+  },
+  {
+    "id": "TJN",
+    "sigla": "TJN",
+    "termo": "Tax Justice Network  (Rede de Justiça Fiscal)",
+    "eixo": "Pesquisa Independente",
+    "aplicacao": "Entidade britânica de pesquisa independente e ativismo fiscal pioneira na metodologia econométrica de estimativa do abuso corporativo e evasão offshore global.",
+    "aliases": [
+      "TJN"
+    ]
+  },
+  {
+    "id": "UBO",
+    "sigla": "UBO",
+    "termo": "Ultimate Beneficial Owner  (Beneficiário Efetivo Final / Proprietário Efetivo)",
+    "eixo": "Governança Societária",
+    "aplicacao": "A pessoa natural física que, em última instância, detém a propriedade, a posse ou o controle direto ou indireto de uma pessoa jurídica ou patrimônio sob custódia.",
+    "aliases": [
+      "UBO"
+    ]
+  },
+  {
+    "id": "UE",
+    "sigla": "UE",
+    "termo": "União Europeia ( European Union )",
+    "eixo": "Blocos Regionais",
+    "aplicacao": "Bloco econômico e político regional envolvido tanto na regulação interna contra a elisão quanto no acolhimento de praças de conduíte corporativo e holding.",
+    "aliases": [
+      "UE"
+    ]
+  },
+  {
+    "id": "UFPR",
+    "sigla": "UFPR",
+    "termo": "Universidade Federal do Paraná",
+    "eixo": "Institucional",
+    "aplicacao": "Universidade pública brasileira no âmbito da qual a pesquisa foi concebida, desenvolvida e submetida como Trabalho de Conclusão de Curso em Economia.",
+    "aliases": [
+      "UFPR"
+    ]
+  },
+  {
+    "id": "UNCITRAL",
+    "sigla": "UNCITRAL",
+    "termo": "United Nations Commission on International Trade Law  (Comissão da ONU para o Direito Comercial Internacional)",
+    "eixo": "Organismos Multilaterais",
+    "aplicacao": "Órgão jurídico das Nações Unidas que formula regras de processo arbitral comumente adotadas nos litígios de resolução investidor-Estado (ISDS).",
+    "aliases": [
+      "UNCITRAL"
+    ]
+  },
+  {
+    "id": "UNCTAD",
+    "sigla": "UNCTAD",
+    "termo": "United Nations Conference on Trade and Development  (Conferência da ONU sobre Comércio e Desenvolvimento)",
+    "eixo": "Organismos Multilaterais",
+    "aplicacao": "Agência da ONU dedicada aos desafios do desenvolvimento; autora do Relatório Mundial de Investimentos (WIR 2015) central na quantificação do  Phantom FDI .",
+    "aliases": [
+      "UNCTAD"
+    ]
+  },
+  {
+    "id": "UTPR",
+    "sigla": "UTPR",
+    "termo": "Undertaxed Profits Rule  (Regra de Lucros Sub-tributados / Regra Residual)",
+    "eixo": "Regulação Internacional",
+    "aplicacao": "Regra secundária de apoio das normas GloBE (Pilar 2) que aloca a cobrança do imposto complementar nas subsidiárias do grupo caso a matriz não aplique o IIR.",
+    "aliases": [
+      "UTPR"
+    ]
+  },
+  {
+    "id": "VAT",
+    "sigla": "VAT",
+    "termo": "Value Added Tax  (Imposto sobre o Valor Agregado - ver IVA)",
+    "eixo": "Finanças Públicas",
+    "aplicacao": "Denominação internacional em inglês para a tributação incidente sobre o valor acrescido nas etapas da cadeia produtiva e de distribuição.",
+    "aliases": [
+      "VAT"
+    ]
+  },
+  {
+    "id": "WHT",
+    "sigla": "WHT",
+    "termo": "Withholding Tax  (Imposto de Renda Retido na Fonte - IRRF)",
+    "eixo": "Finanças Tributárias",
+    "aplicacao": "Tributação deduzida diretamente na fonte remetente quando do pagamento transfronteiriço de juros, royalties, taxas de assistência técnica ou dividendos.",
+    "aliases": [
+      "WHT"
+    ]
+  },
+  {
+    "id": "ZEE",
+    "sigla": "ZEE / ZEEs",
+    "termo": "Zona Econômica Especial ( Special Economic Zone  - SEZ)",
+    "eixo": "Regimes Especiais",
+    "aplicacao": "Enclaves geográficos territoriais delimitados onde vigora regime tributário, aduaneiro e regulatório excepcional de desoneração para atrair capital corporativo.",
+    "aliases": [
+      "ZEE",
+      "ZEEs"
+    ]
+  }
+]
